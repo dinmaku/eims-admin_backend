@@ -6,7 +6,7 @@ from urllib.parse import urlparse
 import ssl
 from dotenv import load_dotenv
 
-load_dotenv()  # For local dev
+load_dotenv()  # for local development
 
 logger = logging.getLogger(__name__)
 
@@ -17,9 +17,9 @@ def get_db_connection():
 
     url = urlparse(DATABASE_URL)
 
-    # SSL is required for Supabase, optional for localhost
+    # Skip SSL for localhost and internal Render DB
     ssl_context = None
-    if url.hostname not in ("localhost", "127.0.0.1"):
+    if url.hostname not in ("localhost", "127.0.0.1") and not url.hostname.endswith(".render.internal"):
         ssl_context = ssl.create_default_context()
 
     try:
@@ -29,7 +29,7 @@ def get_db_connection():
             password=url.password,
             host=url.hostname,
             port=url.port or 5432,
-            database=url.path[1:],  # strip leading '/'
+            database=url.path[1:],
             ssl_context=ssl_context
         )
         logger.info("Database connection successful")
