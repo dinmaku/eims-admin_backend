@@ -1,36 +1,42 @@
-#db.py
+# db.py
+import os
 import pg8000
 import logging
-from .config import DATABASE_CONFIG
+from urllib.parse import urlparse
+import ssl
+from dotenv import load_dotenv
 
-# Configure logging
+load_dotenv()  # Load .env for local development
+
 logger = logging.getLogger(__name__)
 
 def get_db_connection():
+    DATABASE_URL = os.getenv("DATABASE_URL")
+    if not DATABASE_URL:
+        raise ValueError("DATABASE_URL environment variable not set")
+
+    url = urlparse(DATABASE_URL)
+
+    # Use SSL only for remote hosts (not localhost)
+    ssl_context = None
+    if url.hostname not in ("localhost", "127.0.0.1"):
+        ssl_context = ssl.create_default_context()
+
     try:
-        logger.info("Attempting database connection using pg8000...")
-
+        logger.info(f"Connecting to database at {url.hostname}...")
         conn = pg8000.connect(
-            host=DATABASE_CONFIG['host'],
-            database=DATABASE_CONFIG['database'],
-            user=DATABASE_CONFIG['user'],
-            password=DATABASE_CONFIG['password'],
-            port=DATABASE_CONFIG.get('port', 5432)  # default to 5432 if not specified
+            user=url.username,
+            password=url.password,
+            host=url.hostname,
+            port=url.port or 5432,
+            database=url.path[1:],  # strip leading '/'
+            ssl_context=ssl_context
         )
-
         logger.info("Database connection successful")
         return conn
 
-    except pg8000.exceptions.InterfaceError as e:
-        logger.error(f"Database connection failed - InterfaceError: {str(e)}")
-        raise
-
-    except pg8000.exceptions.DatabaseError as e:
-        logger.error(f"Database connection failed - DatabaseError: {str(e)}")
-        raise
-
     except Exception as e:
-        logger.error(f"Database connection failed - Unexpected error: {str(e)}")
+        logger.error(f"Database connection failed: {e}")
         raise
 
 def get_all_discounts():

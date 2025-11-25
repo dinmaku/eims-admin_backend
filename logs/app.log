@@ -4997,3 +4997,433 @@ LINE 2:                     UPDATE events SET description = '' WHERE...
 2025-11-25 10:03:29,700 - app.db - INFO - Database connection successful
 2025-11-25 10:03:29,712 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:03:29] "GET /api/events/wishlist/count HTTP/1.1" 200 -
 2025-11-25 10:03:41,532 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:03:41,631 - app.db - INFO - Database connection successful
+2025-11-25 10:03:41,643 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:03:41] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:04:11,590 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:04:11,699 - app.db - INFO - Database connection successful
+2025-11-25 10:04:11,711 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:04:11] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:04:29,414 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:04:29] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:04:29,418 - app.routes - INFO - JWT verified successfully
+2025-11-25 10:04:29,428 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 10:04:29,435 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:04:29,553 - app.db - INFO - Database connection successful
+2025-11-25 10:04:29,566 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:04:29] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:04:41,537 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:04:41,659 - app.db - INFO - Database connection successful
+2025-11-25 10:04:41,674 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:04:41] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:05:11,864 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:05:11,989 - app.db - INFO - Database connection successful
+2025-11-25 10:05:12,005 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:05:12] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:05:29,415 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:05:29] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:05:29,437 - app.routes - INFO - JWT verified successfully
+2025-11-25 10:05:29,446 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 10:05:29,452 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:05:29,547 - app.db - INFO - Database connection successful
+2025-11-25 10:05:29,558 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:05:29] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:05:41,537 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:05:41,640 - app.db - INFO - Database connection successful
+2025-11-25 10:05:41,652 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:05:41] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:06:11,884 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:06:11,993 - app.db - INFO - Database connection successful
+2025-11-25 10:06:12,007 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:06:12] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:06:29,577 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:06:29] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:06:29,581 - app.routes - INFO - JWT verified successfully
+2025-11-25 10:06:29,593 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 10:06:29,601 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:06:29,717 - app.db - INFO - Database connection successful
+2025-11-25 10:06:29,728 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:06:29] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:06:41,943 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:06:42,053 - app.db - INFO - Database connection successful
+2025-11-25 10:06:42,067 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:06:42] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:07:13,779 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:07:13,932 - app.db - INFO - Database connection successful
+2025-11-25 10:07:13,944 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:07:13] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:07:29,586 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:07:29] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:07:29,614 - app.routes - INFO - JWT verified successfully
+2025-11-25 10:07:29,625 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 10:07:29,639 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:07:29,827 - app.db - INFO - Database connection successful
+2025-11-25 10:07:29,843 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:07:29] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:07:41,873 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:07:41,987 - app.db - INFO - Database connection successful
+2025-11-25 10:07:42,002 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:07:42] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:08:11,535 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:08:11,644 - app.db - INFO - Database connection successful
+2025-11-25 10:08:11,655 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:08:11] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:08:29,425 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:08:29] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:08:29,430 - app.routes - INFO - JWT verified successfully
+2025-11-25 10:08:29,443 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 10:08:29,451 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:08:29,548 - app.db - INFO - Database connection successful
+2025-11-25 10:08:29,561 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:08:29] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:08:41,536 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:08:41,665 - app.db - INFO - Database connection successful
+2025-11-25 10:08:41,679 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:08:41] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:09:11,881 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:09:11,982 - app.db - INFO - Database connection successful
+2025-11-25 10:09:11,992 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:09:11] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:09:29,560 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:09:29] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:09:29,563 - app.routes - INFO - JWT verified successfully
+2025-11-25 10:09:29,574 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 10:09:29,583 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:09:29,706 - app.db - INFO - Database connection successful
+2025-11-25 10:09:29,717 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:09:29] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:09:41,871 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:09:41,981 - app.db - INFO - Database connection successful
+2025-11-25 10:09:41,991 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:09:41] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:10:11,868 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:10:12,064 - app.db - INFO - Database connection successful
+2025-11-25 10:10:12,078 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:10:12] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:10:29,414 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:10:29] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:10:29,417 - app.routes - INFO - JWT verified successfully
+2025-11-25 10:10:29,430 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 10:10:29,438 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:10:29,534 - app.db - INFO - Database connection successful
+2025-11-25 10:10:29,545 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:10:29] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:10:41,538 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:10:41,632 - app.db - INFO - Database connection successful
+2025-11-25 10:10:41,645 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:10:41] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:11:11,529 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:11:11,632 - app.db - INFO - Database connection successful
+2025-11-25 10:11:11,644 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:11:11] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:11:29,557 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:11:29] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:11:29,562 - app.routes - INFO - JWT verified successfully
+2025-11-25 10:11:29,572 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 10:11:29,578 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:11:29,677 - app.db - INFO - Database connection successful
+2025-11-25 10:11:29,688 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:11:29] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:11:41,531 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:11:41,731 - app.db - INFO - Database connection successful
+2025-11-25 10:11:41,743 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:11:41] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:12:11,561 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:12:11,667 - app.db - INFO - Database connection successful
+2025-11-25 10:12:11,679 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:12:11] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:12:29,415 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:12:29] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:12:29,421 - app.routes - INFO - JWT verified successfully
+2025-11-25 10:12:29,432 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 10:12:29,439 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:12:29,575 - app.db - INFO - Database connection successful
+2025-11-25 10:12:29,589 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:12:29] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:12:41,864 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:12:41,971 - app.db - INFO - Database connection successful
+2025-11-25 10:12:41,987 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:12:41] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:13:11,865 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:13:11,966 - app.db - INFO - Database connection successful
+2025-11-25 10:13:11,977 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:13:11] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:13:29,436 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:13:29] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:13:29,440 - app.routes - INFO - JWT verified successfully
+2025-11-25 10:13:29,450 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 10:13:29,458 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:13:29,555 - app.db - INFO - Database connection successful
+2025-11-25 10:13:29,565 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:13:29] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:13:41,536 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:13:41,640 - app.db - INFO - Database connection successful
+2025-11-25 10:13:41,654 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:13:41] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:14:11,537 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:14:11,661 - app.db - INFO - Database connection successful
+2025-11-25 10:14:11,673 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:14:11] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:14:29,556 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:14:29] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:14:29,561 - app.routes - INFO - JWT verified successfully
+2025-11-25 10:14:29,571 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 10:14:29,577 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:14:29,681 - app.db - INFO - Database connection successful
+2025-11-25 10:14:29,692 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:14:29] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:14:41,876 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:14:42,008 - app.db - INFO - Database connection successful
+2025-11-25 10:14:42,022 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:14:42] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:15:11,859 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:15:11,970 - app.db - INFO - Database connection successful
+2025-11-25 10:15:11,982 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:15:11] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:15:29,561 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:15:29] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:15:29,564 - app.routes - INFO - JWT verified successfully
+2025-11-25 10:15:29,579 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 10:15:29,586 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:15:29,709 - app.db - INFO - Database connection successful
+2025-11-25 10:15:29,721 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:15:29] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:15:41,548 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:15:41,687 - app.db - INFO - Database connection successful
+2025-11-25 10:15:41,701 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:15:41] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:16:11,862 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:16:11,963 - app.db - INFO - Database connection successful
+2025-11-25 10:16:11,975 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:16:11] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:16:29,563 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:16:29] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:16:29,566 - app.routes - INFO - JWT verified successfully
+2025-11-25 10:16:29,577 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 10:16:29,584 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:16:29,682 - app.db - INFO - Database connection successful
+2025-11-25 10:16:29,694 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:16:29] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:16:41,881 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:16:41,986 - app.db - INFO - Database connection successful
+2025-11-25 10:16:41,998 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:16:41] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:17:11,865 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:17:11,995 - app.db - INFO - Database connection successful
+2025-11-25 10:17:12,007 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:17:12] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:17:29,565 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:17:29] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:17:29,568 - app.routes - INFO - JWT verified successfully
+2025-11-25 10:17:29,584 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 10:17:29,597 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:17:29,741 - app.db - INFO - Database connection successful
+2025-11-25 10:17:29,962 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:17:29] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:17:41,538 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:17:41,653 - app.db - INFO - Database connection successful
+2025-11-25 10:17:41,664 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:17:41] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:18:11,858 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:18:11,989 - app.db - INFO - Database connection successful
+2025-11-25 10:18:12,003 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:18:12] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:18:29,562 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:18:29] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:18:29,565 - app.routes - INFO - JWT verified successfully
+2025-11-25 10:18:29,576 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 10:18:29,583 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:18:29,679 - app.db - INFO - Database connection successful
+2025-11-25 10:18:29,692 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:18:29] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:18:41,536 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:18:41,660 - app.db - INFO - Database connection successful
+2025-11-25 10:18:41,738 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:18:41] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:19:11,873 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:19:11,978 - app.db - INFO - Database connection successful
+2025-11-25 10:19:12,009 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:19:12] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:19:29,414 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:19:29] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:19:29,419 - app.routes - INFO - JWT verified successfully
+2025-11-25 10:19:29,433 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 10:19:29,441 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:19:29,636 - app.db - INFO - Database connection successful
+2025-11-25 10:19:29,648 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:19:29] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:19:41,864 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:19:42,120 - app.db - INFO - Database connection successful
+2025-11-25 10:19:42,134 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:19:42] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:20:11,877 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:20:11,991 - app.db - INFO - Database connection successful
+2025-11-25 10:20:12,002 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:20:12] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:20:29,560 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:20:29] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:20:29,563 - app.routes - INFO - JWT verified successfully
+2025-11-25 10:20:29,589 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 10:20:29,598 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:20:29,704 - app.db - INFO - Database connection successful
+2025-11-25 10:20:29,717 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:20:29] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:21:13,878 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:21:13,981 - app.db - INFO - Database connection successful
+2025-11-25 10:21:13,995 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:21:13] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:21:42,877 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:21:42] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:21:42,924 - app.routes - INFO - JWT verified successfully
+2025-11-25 10:21:43,057 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 10:21:43,072 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:21:43,204 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:21:43,223 - app.db - INFO - Database connection successful
+2025-11-25 10:21:43,405 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:21:43] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:21:43,385 - app.db - INFO - Database connection successful
+2025-11-25 10:21:43,428 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:21:43] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:22:11,531 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:22:11,746 - app.db - INFO - Database connection successful
+2025-11-25 10:22:11,760 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:22:11] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:23:54,387 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:23:55,299 - app.db - INFO - Database connection successful
+2025-11-25 10:23:55,662 - root - INFO - Current event type count: 10
+2025-11-25 10:23:55,662 - root - INFO - Event types already exist, skipping initialization
+2025-11-25 10:23:55,662 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:23:56,918 - app.db - INFO - Database connection successful
+2025-11-25 10:23:57,114 - app - INFO - Application startup
+2025-11-25 10:23:57,927 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-25 10:23:57,927 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-25 10:23:57,930 - werkzeug - INFO -  * Restarting with stat
+2025-11-25 10:24:02,683 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:24:03,438 - app.db - INFO - Database connection successful
+2025-11-25 10:24:03,441 - root - INFO - Current event type count: 10
+2025-11-25 10:24:03,442 - root - INFO - Event types already exist, skipping initialization
+2025-11-25 10:24:03,442 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:24:03,661 - app.db - INFO - Database connection successful
+2025-11-25 10:24:03,727 - app - INFO - Application startup
+2025-11-25 10:24:03,810 - werkzeug - WARNING -  * Debugger is active!
+2025-11-25 10:24:03,815 - werkzeug - INFO -  * Debugger PIN: 929-815-128
+2025-11-25 10:24:11,881 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:24:12,186 - app.db - INFO - Database connection successful
+2025-11-25 10:24:12,200 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:24:12] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:24:29,570 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:24:29] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:24:29,576 - app.routes - INFO - JWT verified successfully
+2025-11-25 10:24:29,587 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 10:24:29,596 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:24:29,695 - app.db - INFO - Database connection successful
+2025-11-25 10:24:29,706 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:24:29] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:24:41,880 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:24:42,081 - app.db - INFO - Database connection successful
+2025-11-25 10:24:42,092 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:24:42] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:25:11,586 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:25:11,700 - app.db - INFO - Database connection successful
+2025-11-25 10:25:11,716 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:25:11] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:25:29,558 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:25:29] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:25:29,563 - app.routes - INFO - JWT verified successfully
+2025-11-25 10:25:29,572 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 10:25:29,581 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:25:29,675 - app.db - INFO - Database connection successful
+2025-11-25 10:25:29,688 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:25:29] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:25:41,865 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:25:41,983 - app.db - INFO - Database connection successful
+2025-11-25 10:25:41,997 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:25:41] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:26:11,881 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:26:11,988 - app.db - INFO - Database connection successful
+2025-11-25 10:26:12,002 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:26:12] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:26:29,557 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:26:29] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:26:29,562 - app.routes - INFO - JWT verified successfully
+2025-11-25 10:26:29,571 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 10:26:29,580 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:26:29,676 - app.db - INFO - Database connection successful
+2025-11-25 10:26:29,688 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:26:29] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:26:41,880 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:26:41,977 - app.db - INFO - Database connection successful
+2025-11-25 10:26:41,989 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:26:41] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:27:11,546 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:27:11,665 - app.db - INFO - Database connection successful
+2025-11-25 10:27:11,677 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:27:11] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:27:29,563 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:27:29] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:27:29,566 - app.routes - INFO - JWT verified successfully
+2025-11-25 10:27:29,576 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 10:27:29,584 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:27:29,678 - app.db - INFO - Database connection successful
+2025-11-25 10:27:29,689 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:27:29] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:27:41,676 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:27:41,847 - app.db - INFO - Database connection successful
+2025-11-25 10:27:41,860 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:27:41] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:28:11,524 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:28:11,639 - app.db - INFO - Database connection successful
+2025-11-25 10:28:11,652 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:28:11] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:28:16,061 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:28:16] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:28:16,065 - app.routes - INFO - JWT verified successfully
+2025-11-25 10:28:16,082 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 10:28:16,092 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:28:16,219 - app.db - INFO - Database connection successful
+2025-11-25 10:28:16,234 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:28:16] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:28:16,241 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:28:16,371 - app.db - INFO - Database connection successful
+2025-11-25 10:28:16,384 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:28:16] "GET /events-by-month HTTP/1.1" 200 -
+2025-11-25 10:28:16,543 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:28:16] "OPTIONS /events/all HTTP/1.1" 200 -
+2025-11-25 10:28:16,544 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:28:16] "OPTIONS /events/schedules HTTP/1.1" 200 -
+2025-11-25 10:28:16,545 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:28:16] "OPTIONS /api/feedback/statistics HTTP/1.1" 200 -
+2025-11-25 10:28:16,860 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:28:16,860 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:28:16,862 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:28:17,028 - app.db - INFO - Database connection successful
+2025-11-25 10:28:17,072 - app.db - INFO - Database connection successful
+2025-11-25 10:28:17,173 - app.db - INFO - Database connection successful
+2025-11-25 10:28:17,200 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:28:17] "GET /events/schedules HTTP/1.1" 200 -
+2025-11-25 10:28:17,216 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:28:17] "GET /api/feedback/statistics HTTP/1.1" 200 -
+2025-11-25 10:28:17,248 - app.models - INFO - Found 0 upcoming events
+2025-11-25 10:28:17,258 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:28:17] "GET /events/all HTTP/1.1" 200 -
+2025-11-25 10:28:24,907 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:28:24] "OPTIONS /suppliers HTTP/1.1" 200 -
+2025-11-25 10:28:24,911 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:28:25,023 - app.db - INFO - Database connection successful
+2025-11-25 10:28:25,063 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:28:25] "GET /suppliers HTTP/1.1" 200 -
+2025-11-25 10:28:25,848 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:28:25] "OPTIONS /venues HTTP/1.1" 200 -
+2025-11-25 10:28:25,854 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:28:25,961 - app.db - INFO - Database connection successful
+2025-11-25 10:28:25,975 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:28:25] "GET /venues HTTP/1.1" 200 -
+2025-11-25 10:28:26,308 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:28:26] "OPTIONS /additional-services HTTP/1.1" 200 -
+2025-11-25 10:28:26,310 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:28:26] "OPTIONS /inactive-additional-services HTTP/1.1" 200 -
+2025-11-25 10:28:26,323 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:28:26,325 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:28:26,491 - app.db - INFO - Database connection successful
+2025-11-25 10:28:26,529 - app.db - INFO - Database connection successful
+2025-11-25 10:28:26,607 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:28:26] "GET /additional-services HTTP/1.1" 200 -
+2025-11-25 10:28:26,608 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:28:26] "GET /inactive-additional-services HTTP/1.1" 200 -
+2025-11-25 10:28:26,676 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:28:26] "OPTIONS /api/discounts HTTP/1.1" 200 -
+2025-11-25 10:28:26,679 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:28:26,790 - app.db - INFO - Database connection successful
+2025-11-25 10:28:26,820 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:28:26] "GET /api/discounts HTTP/1.1" 200 -
+2025-11-25 10:28:27,196 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:28:27] "OPTIONS /outfits HTTP/1.1" 200 -
+2025-11-25 10:28:27,197 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:28:27] "OPTIONS /gown-packages HTTP/1.1" 200 -
+2025-11-25 10:28:27,200 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:28:27] "OPTIONS /inactive-gown-packages HTTP/1.1" 200 -
+2025-11-25 10:28:27,205 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:28:27,210 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:28:27,211 - app.routes - INFO - Fetching inactive gown packages
+2025-11-25 10:28:27,376 - app.db - INFO - Database connection successful
+2025-11-25 10:28:27,442 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:28:27] "GET /outfits HTTP/1.1" 200 -
+2025-11-25 10:28:27,418 - app.db - INFO - Database connection successful
+2025-11-25 10:28:27,451 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:28:27] "GET /gown-packages HTTP/1.1" 200 -
+2025-11-25 10:28:27,419 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:28:27,575 - app.db - INFO - Database connection successful
+2025-11-25 10:28:27,594 - app.models - INFO - Executing query to fetch inactive gown packages
+2025-11-25 10:28:27,607 - app.models - INFO - Found 0 inactive packages
+2025-11-25 10:28:27,616 - app.models - INFO - Successfully processed package data
+2025-11-25 10:28:27,628 - app.routes - INFO - Found 0 inactive packages
+2025-11-25 10:28:27,638 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:28:27] "GET /inactive-gown-packages HTTP/1.1" 200 -
+2025-11-25 10:28:29,087 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:28:29] "OPTIONS /toggle-gown-package-status/1 HTTP/1.1" 200 -
+2025-11-25 10:28:29,090 - app.routes - INFO - Toggling status for package 1
+2025-11-25 10:28:29,099 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:28:29,194 - app.db - INFO - Database connection successful
+2025-11-25 10:28:29,209 - app.models - INFO - Current status for package 1: Active
+2025-11-25 10:28:29,216 - app.models - INFO - New status will be: Inactive
+2025-11-25 10:28:29,241 - app.models - INFO - Successfully updated package 1 status to Inactive
+2025-11-25 10:28:29,248 - app.routes - INFO - Successfully toggled status for package 1
+2025-11-25 10:28:29,257 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:28:29] "PUT /toggle-gown-package-status/1 HTTP/1.1" 200 -
+2025-11-25 10:28:29,263 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:28:29,358 - app.db - INFO - Database connection successful
+2025-11-25 10:28:29,370 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:28:29] "GET /gown-packages HTTP/1.1" 200 -
+2025-11-25 10:28:29,379 - app.routes - INFO - Fetching inactive gown packages
+2025-11-25 10:28:29,387 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:28:29,494 - app.db - INFO - Database connection successful
+2025-11-25 10:28:29,502 - app.models - INFO - Executing query to fetch inactive gown packages
+2025-11-25 10:28:29,515 - app.models - INFO - Found 1 inactive packages
+2025-11-25 10:28:29,524 - app.models - INFO - Successfully processed package data
+2025-11-25 10:28:29,531 - app.routes - INFO - Found 1 inactive packages
+2025-11-25 10:28:29,540 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:28:29] "GET /inactive-gown-packages HTTP/1.1" 200 -
+2025-11-25 10:28:30,511 - app.routes - INFO - Fetching inactive gown packages
+2025-11-25 10:28:30,519 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:28:30,638 - app.db - INFO - Database connection successful
+2025-11-25 10:28:30,647 - app.models - INFO - Executing query to fetch inactive gown packages
+2025-11-25 10:28:30,661 - app.models - INFO - Found 1 inactive packages
+2025-11-25 10:28:30,669 - app.models - INFO - Successfully processed package data
+2025-11-25 10:28:30,679 - app.routes - INFO - Found 1 inactive packages
+2025-11-25 10:28:30,686 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:28:30] "GET /inactive-gown-packages HTTP/1.1" 200 -
+2025-11-25 10:28:31,823 - app.routes - INFO - Toggling status for package 1
+2025-11-25 10:28:31,832 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:28:31,930 - app.db - INFO - Database connection successful
+2025-11-25 10:28:31,941 - app.models - INFO - Current status for package 1: Inactive
+2025-11-25 10:28:31,951 - app.models - INFO - New status will be: Active
+2025-11-25 10:28:31,985 - app.models - INFO - Successfully updated package 1 status to Active
+2025-11-25 10:28:31,995 - app.routes - INFO - Successfully toggled status for package 1
+2025-11-25 10:28:32,003 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:28:32] "PUT /toggle-gown-package-status/1 HTTP/1.1" 200 -
+2025-11-25 10:28:32,007 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:28:32,109 - app.db - INFO - Database connection successful
+2025-11-25 10:28:32,123 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:28:32] "GET /gown-packages HTTP/1.1" 200 -
+2025-11-25 10:28:32,132 - app.routes - INFO - Fetching inactive gown packages
+2025-11-25 10:28:32,140 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:28:32,269 - app.db - INFO - Database connection successful
+2025-11-25 10:28:32,280 - app.models - INFO - Executing query to fetch inactive gown packages
+2025-11-25 10:28:32,293 - app.models - INFO - Found 0 inactive packages
+2025-11-25 10:28:32,303 - app.models - INFO - Successfully processed package data
+2025-11-25 10:28:32,312 - app.routes - INFO - Found 0 inactive packages
+2025-11-25 10:28:32,321 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:28:32] "GET /inactive-gown-packages HTTP/1.1" 200 -
+2025-11-25 10:29:16,558 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:29:16] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:29:16,566 - app.routes - INFO - JWT verified successfully
+2025-11-25 10:29:16,578 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 10:29:16,587 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:29:16,686 - app.db - INFO - Database connection successful
+2025-11-25 10:29:16,697 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:29:16] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:30:16,475 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:30:16] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:30:16,479 - app.routes - INFO - JWT verified successfully
+2025-11-25 10:30:16,492 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 10:30:16,501 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:30:16,604 - app.db - INFO - Database connection successful
+2025-11-25 10:30:16,618 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 10:30:16] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 10:30:31,026 - werkzeug - INFO -  * Detected change in 'C:\\Users\\ACADEO LIVE\\Desktop\\eims-main\\eims-main\\eims-admin_project\\eims_admin_backend\\app\\db.py', reloading
+2025-11-25 10:30:31,121 - werkzeug - INFO -  * Restarting with stat
+2025-11-25 10:34:09,449 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:34:09,450 - app.db - ERROR - Database connection failed: connect() got an unexpected keyword argument 'ssl'
+2025-11-25 10:36:44,982 - app.db - INFO - Attempting database connection using pg8000...
+2025-11-25 10:36:45,090 - app.db - ERROR - Database connection failed: Server refuses SSL
+2025-11-25 10:37:28,106 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 10:37:28,225 - app.db - INFO - Database connection successful
+2025-11-25 10:37:28,230 - root - INFO - Current event type count: 10
+2025-11-25 10:37:28,230 - root - INFO - Event types already exist, skipping initialization
+2025-11-25 10:37:28,231 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 10:37:28,450 - app.db - INFO - Database connection successful
+2025-11-25 10:37:28,538 - app - INFO - Application startup
+2025-11-25 10:37:28,585 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-25 10:37:28,585 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-25 10:37:28,588 - werkzeug - INFO -  * Restarting with stat
+2025-11-25 10:37:29,119 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 10:37:29,232 - app.db - INFO - Database connection successful
+2025-11-25 10:37:29,235 - root - INFO - Current event type count: 10
+2025-11-25 10:37:29,235 - root - INFO - Event types already exist, skipping initialization
+2025-11-25 10:37:29,236 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 10:37:29,325 - app.db - INFO - Database connection successful
