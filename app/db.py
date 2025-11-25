@@ -32,6 +32,12 @@ def get_db_connection():
             database=url.path[1:],
             ssl_context=ssl_context
         )
+
+        # Ensure queries use the public schema
+        cursor = conn.cursor()
+        cursor.execute("SET search_path TO public")
+        cursor.close()
+
         logger.info("Database connection successful")
         return conn
 
