@@ -6,7 +6,7 @@ from urllib.parse import urlparse
 import ssl
 from dotenv import load_dotenv
 
-load_dotenv()  # Load .env for local development
+load_dotenv()  # For local dev
 
 logger = logging.getLogger(__name__)
 
@@ -17,7 +17,7 @@ def get_db_connection():
 
     url = urlparse(DATABASE_URL)
 
-    # Use SSL only for remote hosts (not localhost)
+    # SSL is required for Supabase, optional for localhost
     ssl_context = None
     if url.hostname not in ("localhost", "127.0.0.1"):
         ssl_context = ssl.create_default_context()
