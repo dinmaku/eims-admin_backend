@@ -1213,31 +1213,15 @@ def init_routes(app):
             logger.error(f"Error fetching booked wishlist: {str(e)}")
             return jsonify({'message': f'Error fetching wishlist: {str(e)}'}), 500
 
-    @app.route('/events/all', methods=['GET', 'OPTIONS'])
+    @app.route('/events/all', methods=['GET'])
     @jwt_required()
     def get_all_events_route():
-        if request.method == 'OPTIONS':
-            response = make_response()
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
-            response.headers.add('Access-Control-Allow-Methods', 'GET,OPTIONS')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response
-
         try:
             events = get_all_events()
-            # The dates are already formatted in the model, no need to convert here
-            response = jsonify(events)
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response
-
+            return jsonify(events)
         except Exception as e:
-            logger.error(f"Error in get_all_events_route: {str(e)}")
-            response = jsonify({'message': 'An error occurred while fetching events'})
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response, 500
+            logger.error(f"Error: {str(e)}")
+            return jsonify({'message': 'An error occurred while fetching events'}), 500
 
     @app.route('/events/date/<date>', methods=['GET'])
     @jwt_required()
@@ -1733,19 +1717,9 @@ def init_routes(app):
             response.headers.add('Access-Control-Allow-Credentials', 'true')
             return response, 500
 
-    @app.route('/events/schedules', methods=['GET', 'OPTIONS'])
-    @cross_origin(supports_credentials=True, origins=['http://localhost:5173'])
+    @app.route('/events/schedules', methods=['GET'])
     def get_event_schedules():
-        if request.method == 'OPTIONS':
-            response = make_response()
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
-            response.headers.add('Access-Control-Allow-Methods', 'GET,OPTIONS')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response
-
         try:
-            # Get all events with their schedules
             conn = get_db_connection()
             cur = conn.cursor()
             cur.execute("""
@@ -1758,7 +1732,6 @@ def init_routes(app):
             cur.close()
             conn.close()
 
-            # Format the response
             schedules = []
             for event in events:
                 schedules.append({
