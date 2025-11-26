@@ -2119,7 +2119,7 @@ def init_routes(app):
     # Route without the /api prefix for compatibility with frontend
     @app.route('/invoices/event/<int:event_id>', methods=['GET'])
     @jwt_required(optional=True)  # JWT optional for this route
-    def get_invoice_by_event_route(event_id):
+    def get_invoice_by_event_route_compat(event_id):
         try:
             # Only verify JWT if present
             verify_jwt_in_request(optional=True)
