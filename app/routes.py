@@ -73,19 +73,6 @@ def get_saved_dir(subdir):
     return saved_dir
 
 def init_routes(app):
-    # Single source of CORS configuration
-    CORS(app, 
-        resources={
-            r"/*": {  # Match all routes
-                "origins": ["http://localhost:5173",
-                "https://redcarpetadmin.vercel.app"],
-                "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-                "allow_headers": ["Content-Type", "Authorization"],
-                "supports_credentials": True,
-                "expose_headers": ["Content-Type", "Authorization"]
-            }
-        }
-    )
 
     # Initialize tables
     initialize_event_types()

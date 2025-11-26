@@ -8,20 +8,24 @@ from .routes import init_routes
 
 def create_app():
     app = Flask(__name__)
-    
-    # Set up logging
+
+    CORS(app,
+         origins=[
+             "http://localhost:5173",
+             "https://redcarpetadmin.vercel.app"
+         ],
+         methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+         allow_headers=["Content-Type", "Authorization"],
+         supports_credentials=True
+    )
+
     setup_logging(app)
 
-    # Set up the Flask-JWT-Extended configuration
-    app.config['JWT_SECRET_KEY'] = os.getenv('eims', 'fallback_jwt_secret')  # Ensure you set a JWT secret key
-    
-    # Set JWT token expiration to 'False' to make it never expire
-    app.config['JWT_ACCESS_TOKEN_EXPIRES'] = False  # Disable token expiration
+    app.config['JWT_SECRET_KEY'] = os.getenv('eims', 'fallback_jwt_secret')
+    app.config['JWT_ACCESS_TOKEN_EXPIRES'] = False
 
-    # Initialize JWT manager
     jwt = JWTManager(app)
-    
-    # Initialize routes
+
     init_routes(app)
-    
+
     return app
