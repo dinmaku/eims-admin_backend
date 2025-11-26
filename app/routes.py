@@ -2308,22 +2308,6 @@ def init_routes(app):
             return jsonify({'message': f'An error occurred while fetching event details: {str(e)}'}), 500
 
 
-    @app.route('/api/invoices/event/<int:event_id>', methods=['GET'])
-    @jwt_required(optional=True)
-    def get_invoice_by_event_route_api(event_id):
-        try:
-            verify_jwt_in_request(optional=True)
-            invoice = get_invoice_by_event(event_id)
-
-            if not invoice:
-                return jsonify({"error": "No invoice found for this event"}), 404
-
-            return jsonify(invoice), 200
-
-        except Exception as e:
-            logger.error(f"Error retrieving invoice for event: {e}")
-            return jsonify({"error": str(e)}), 500
-
 
     # Compatibility route without /api prefix
     @app.route('/invoices/event/<int:event_id>', methods=['GET'])
