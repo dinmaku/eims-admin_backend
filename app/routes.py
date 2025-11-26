@@ -77,7 +77,8 @@ def init_routes(app):
     CORS(app, 
         resources={
             r"/*": {  # Match all routes
-                "origins": ["http://localhost:5173"],
+                "origins": ["http://localhost:5173",
+                "https://redcarpetadmin.vercel.app"],
                 "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
                 "allow_headers": ["Content-Type", "Authorization"],
                 "supports_credentials": True,

@@ -5915,3 +5915,856 @@ LINE 2:                     UPDATE events SET description = '' WHERE...
 2025-11-25 11:52:02,405 - root - INFO - Event types already exist, skipping initialization
 2025-11-25 11:52:02,406 - app.db - INFO - Connecting to database at localhost...
 2025-11-25 11:52:02,497 - app.db - INFO - Database connection successful
+2025-11-25 11:52:02,592 - app - INFO - Application startup
+2025-11-25 11:52:02,623 - werkzeug - WARNING -  * Debugger is active!
+2025-11-25 11:52:02,630 - werkzeug - INFO -  * Debugger PIN: 929-815-128
+2025-11-25 11:52:16,477 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:52:16] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 11:52:16,483 - app.routes - INFO - JWT verified successfully
+2025-11-25 11:52:16,502 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 11:52:16,510 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:52:16,604 - app.db - INFO - Database connection successful
+2025-11-25 11:52:16,614 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:52:16] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 11:53:16,474 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:53:16] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 11:53:16,494 - app.routes - INFO - JWT verified successfully
+2025-11-25 11:53:16,515 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 11:53:16,532 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:53:16,746 - app.db - INFO - Database connection successful
+2025-11-25 11:53:16,830 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:53:16] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 11:54:16,477 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:54:16] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 11:54:16,484 - app.routes - INFO - JWT verified successfully
+2025-11-25 11:54:16,499 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 11:54:16,506 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:54:16,598 - app.db - INFO - Database connection successful
+2025-11-25 11:54:16,609 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:54:16] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 11:55:16,475 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:55:16] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 11:55:16,481 - app.routes - INFO - JWT verified successfully
+2025-11-25 11:55:16,499 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 11:55:16,508 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:55:16,729 - app.db - INFO - Database connection successful
+2025-11-25 11:55:16,746 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:55:16] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 11:56:16,569 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:56:16] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 11:56:16,582 - app.routes - INFO - JWT verified successfully
+2025-11-25 11:56:16,594 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 11:56:16,603 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:56:16,691 - app.db - INFO - Database connection successful
+2025-11-25 11:56:16,701 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:56:16] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 11:57:16,476 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:57:16] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 11:57:16,479 - app.routes - INFO - JWT verified successfully
+2025-11-25 11:57:16,529 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 11:57:16,537 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:57:16,690 - app.db - INFO - Database connection successful
+2025-11-25 11:57:17,027 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:57:17] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 11:58:16,473 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:58:16] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 11:58:16,478 - app.routes - INFO - JWT verified successfully
+2025-11-25 11:58:16,493 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 11:58:16,501 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:58:16,694 - app.db - INFO - Database connection successful
+2025-11-25 11:58:16,708 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:58:16] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 11:58:25,036 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:58:25] "OPTIONS /api/events/wishlist/mark-all-viewed HTTP/1.1" 200 -
+2025-11-25 11:58:25,040 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:58:25,147 - app.db - INFO - Database connection successful
+2025-11-25 11:58:25,228 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:58:25] "POST /api/events/wishlist/mark-all-viewed HTTP/1.1" 200 -
+2025-11-25 11:58:25,494 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:58:25] "OPTIONS /booked-wishlist HTTP/1.1" 200 -
+2025-11-25 11:58:25,672 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:58:25] "OPTIONS /api/upcoming-events HTTP/1.1" 200 -
+2025-11-25 11:58:25,673 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:58:25] "OPTIONS /available-venues HTTP/1.1" 200 -
+2025-11-25 11:58:25,675 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:58:25] "OPTIONS /available-suppliers HTTP/1.1" 200 -
+2025-11-25 11:58:25,681 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:58:25] "OPTIONS /additional-services HTTP/1.1" 200 -
+2025-11-25 11:58:25,683 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:58:25] "OPTIONS /outfits HTTP/1.1" 200 -
+2025-11-25 11:58:25,686 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:58:25] "OPTIONS /available-gown-packages HTTP/1.1" 200 -
+2025-11-25 11:58:25,498 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:58:25,689 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:58:25,690 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:58:25,691 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:58:25,719 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:58:25,720 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:58:26,259 - app.db - INFO - Database connection successful
+2025-11-25 11:58:26,302 - app.db - INFO - Database connection successful
+2025-11-25 11:58:26,345 - app.db - INFO - Database connection successful
+2025-11-25 11:58:26,411 - app.db - INFO - Database connection successful
+2025-11-25 11:58:26,522 - app.db - INFO - Database connection successful
+2025-11-25 11:58:26,573 - app.db - INFO - Database connection successful
+2025-11-25 11:58:26,634 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:58:26] "GET /available-gown-packages HTTP/1.1" 200 -
+2025-11-25 11:58:26,640 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:58:26] "GET /available-venues HTTP/1.1" 200 -
+2025-11-25 11:58:26,639 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:58:26,741 - app.db - INFO - Database connection successful
+2025-11-25 11:58:26,804 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:58:26] "GET /outfits HTTP/1.1" 200 -
+2025-11-25 11:58:26,810 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:58:26] "GET /available-suppliers HTTP/1.1" 200 -
+2025-11-25 11:58:26,812 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:58:26] "GET /additional-services HTTP/1.1" 200 -
+2025-11-25 11:58:26,954 - app.routes - INFO - Booked wishlists data: []
+2025-11-25 11:58:26,965 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:58:26] "GET /booked-wishlist HTTP/1.1" 200 -
+2025-11-25 11:58:27,115 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:58:27] "OPTIONS /check-auth HTTP/1.1" 200 -
+2025-11-25 11:58:27,117 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:58:27] "OPTIONS /created-packages HTTP/1.1" 200 -
+2025-11-25 11:58:27,118 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:58:27] "OPTIONS /event-types HTTP/1.1" 200 -
+2025-11-25 11:58:27,223 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:58:27] "GET /check-auth HTTP/1.1" 200 -
+2025-11-25 11:58:27,220 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:58:27,221 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:58:27,401 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:58:27] "OPTIONS /events/schedules HTTP/1.1" 200 -
+2025-11-25 11:58:27,222 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:58:27,224 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:58:27,227 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:58:27,396 - app.db - INFO - Database connection successful
+2025-11-25 11:58:27,681 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:58:27] "GET /available-suppliers HTTP/1.1" 200 -
+2025-11-25 11:58:27,402 - app.db - INFO - Database connection successful
+2025-11-25 11:58:27,705 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:58:27] "GET /available-venues HTTP/1.1" 200 -
+2025-11-25 11:58:27,501 - app.models - INFO - Found 1 upcoming events
+2025-11-25 11:58:27,717 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:58:27] "GET /api/upcoming-events HTTP/1.1" 200 -
+2025-11-25 11:58:27,592 - app.db - INFO - Database connection successful
+2025-11-25 11:58:27,732 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:58:27] "GET /available-gown-packages HTTP/1.1" 200 -
+2025-11-25 11:58:27,597 - app.db - INFO - Database connection successful
+2025-11-25 11:58:27,747 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:58:27] "GET /additional-services HTTP/1.1" 200 -
+2025-11-25 11:58:27,695 - app.db - INFO - Database connection successful
+2025-11-25 11:58:27,698 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:58:27,802 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:58:27] "GET /created-packages HTTP/1.1" 200 -
+2025-11-25 11:58:27,710 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:58:27,713 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:58:27,981 - app.db - INFO - Database connection successful
+2025-11-25 11:58:29,022 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:58:29] "GET /event-types HTTP/1.1" 200 -
+2025-11-25 11:58:28,966 - app.db - INFO - Database connection successful
+2025-11-25 11:58:29,027 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:58:29] "GET /outfits HTTP/1.1" 200 -
+2025-11-25 11:58:29,026 - app.db - INFO - Database connection successful
+2025-11-25 11:58:29,045 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:58:29] "GET /events/schedules HTTP/1.1" 200 -
+2025-11-25 11:59:01,109 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:01] "OPTIONS /api/events/wishlist/mark-all-viewed HTTP/1.1" 200 -
+2025-11-25 11:59:01,125 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:01] "OPTIONS /booked-wishlist HTTP/1.1" 200 -
+2025-11-25 11:59:01,121 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:59:01,173 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:01] "OPTIONS /api/upcoming-events HTTP/1.1" 200 -
+2025-11-25 11:59:01,174 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:01] "OPTIONS /additional-services HTTP/1.1" 200 -
+2025-11-25 11:59:01,176 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:01] "OPTIONS /available-suppliers HTTP/1.1" 200 -
+2025-11-25 11:59:01,177 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:01] "OPTIONS /available-venues HTTP/1.1" 200 -
+2025-11-25 11:59:01,181 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:01] "OPTIONS /available-gown-packages HTTP/1.1" 200 -
+2025-11-25 11:59:01,183 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:01] "OPTIONS /outfits HTTP/1.1" 200 -
+2025-11-25 11:59:01,133 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:59:01,190 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:59:01,191 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:59:01,194 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:59:01,201 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:59:01,370 - app.db - INFO - Database connection successful
+2025-11-25 11:59:01,421 - app.db - INFO - Database connection successful
+2025-11-25 11:59:01,424 - app.db - INFO - Database connection successful
+2025-11-25 11:59:01,530 - app.db - INFO - Database connection successful
+2025-11-25 11:59:01,758 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:01] "POST /api/events/wishlist/mark-all-viewed HTTP/1.1" 200 -
+2025-11-25 11:59:01,768 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:01] "GET /additional-services HTTP/1.1" 200 -
+2025-11-25 11:59:01,757 - app.routes - INFO - Booked wishlists data: []
+2025-11-25 11:59:01,786 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:01] "GET /booked-wishlist HTTP/1.1" 200 -
+2025-11-25 11:59:01,758 - app.db - INFO - Database connection successful
+2025-11-25 11:59:01,804 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:01] "GET /available-suppliers HTTP/1.1" 200 -
+2025-11-25 11:59:01,761 - app.db - INFO - Database connection successful
+2025-11-25 11:59:01,817 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:01] "GET /available-venues HTTP/1.1" 200 -
+2025-11-25 11:59:01,776 - app.models - INFO - Found 1 upcoming events
+2025-11-25 11:59:01,825 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:01] "GET /api/upcoming-events HTTP/1.1" 200 -
+2025-11-25 11:59:01,777 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:59:01,782 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:59:02,007 - app.db - INFO - Database connection successful
+2025-11-25 11:59:02,022 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:02] "GET /available-gown-packages HTTP/1.1" 200 -
+2025-11-25 11:59:02,011 - app.db - INFO - Database connection successful
+2025-11-25 11:59:02,038 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:02] "GET /outfits HTTP/1.1" 200 -
+2025-11-25 11:59:07,008 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:07] "OPTIONS /api/upcoming-events HTTP/1.1" 200 -
+2025-11-25 11:59:07,012 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:59:07,104 - app.db - INFO - Database connection successful
+2025-11-25 11:59:07,194 - app.models - INFO - Found 1 upcoming events
+2025-11-25 11:59:07,202 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:07] "GET /api/upcoming-events HTTP/1.1" 200 -
+2025-11-25 11:59:09,399 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:59:09,497 - app.db - INFO - Database connection successful
+2025-11-25 11:59:09,524 - app.models - INFO - Found 1 upcoming events
+2025-11-25 11:59:09,530 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:09] "GET /api/upcoming-events HTTP/1.1" 200 -
+2025-11-25 11:59:09,535 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:09] "OPTIONS /api/invoices/event/1 HTTP/1.1" 200 -
+2025-11-25 11:59:09,538 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:59:09,630 - app.db - INFO - Database connection successful
+2025-11-25 11:59:09,679 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:09] "GET /api/invoices/event/1 HTTP/1.1" 200 -
+2025-11-25 11:59:10,319 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:10] "OPTIONS /events/all HTTP/1.1" 200 -
+2025-11-25 11:59:10,323 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:59:10,419 - app.db - INFO - Database connection successful
+2025-11-25 11:59:10,435 - app.models - INFO - Found 0 upcoming events
+2025-11-25 11:59:10,443 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:10] "GET /events/all HTTP/1.1" 200 -
+2025-11-25 11:59:11,167 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:59:11,262 - app.db - INFO - Database connection successful
+2025-11-25 11:59:11,280 - app.models - INFO - Found 0 upcoming events
+2025-11-25 11:59:11,374 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:11] "GET /events/all HTTP/1.1" 200 -
+2025-11-25 11:59:11,727 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:59:11,826 - app.db - INFO - Database connection successful
+2025-11-25 11:59:11,855 - app.models - INFO - Found 1 upcoming events
+2025-11-25 11:59:11,865 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:11] "GET /api/upcoming-events HTTP/1.1" 200 -
+2025-11-25 11:59:13,199 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:59:13,293 - app.db - INFO - Database connection successful
+2025-11-25 11:59:13,311 - app.models - INFO - Found 0 upcoming events
+2025-11-25 11:59:13,320 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:13] "GET /events/all HTTP/1.1" 200 -
+2025-11-25 11:59:13,630 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:13] "OPTIONS /api/upcoming-events HTTP/1.1" 200 -
+2025-11-25 11:59:13,634 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:59:13,745 - app.db - INFO - Database connection successful
+2025-11-25 11:59:13,777 - app.models - INFO - Found 1 upcoming events
+2025-11-25 11:59:13,786 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:13] "GET /api/upcoming-events HTTP/1.1" 200 -
+2025-11-25 11:59:13,794 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:59:13,898 - app.db - INFO - Database connection successful
+2025-11-25 11:59:13,913 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:13] "GET /api/invoices/event/1 HTTP/1.1" 200 -
+2025-11-25 11:59:13,950 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:59:14,059 - app.db - INFO - Database connection successful
+2025-11-25 11:59:14,076 - app.models - INFO - Found 0 upcoming events
+2025-11-25 11:59:14,084 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:14] "GET /events/all HTTP/1.1" 200 -
+2025-11-25 11:59:14,712 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:59:14,809 - app.db - INFO - Database connection successful
+2025-11-25 11:59:14,825 - app.models - INFO - Found 0 upcoming events
+2025-11-25 11:59:14,834 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:14] "GET /events/all HTTP/1.1" 200 -
+2025-11-25 11:59:15,143 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:59:15,243 - app.db - INFO - Database connection successful
+2025-11-25 11:59:15,271 - app.models - INFO - Found 1 upcoming events
+2025-11-25 11:59:15,279 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:15] "GET /api/upcoming-events HTTP/1.1" 200 -
+2025-11-25 11:59:15,298 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:15] "OPTIONS /api/invoices/event/1 HTTP/1.1" 200 -
+2025-11-25 11:59:15,301 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:59:15,398 - app.db - INFO - Database connection successful
+2025-11-25 11:59:15,410 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:15] "GET /api/invoices/event/1 HTTP/1.1" 200 -
+2025-11-25 11:59:16,305 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:16] "OPTIONS /api/invoices/event/1 HTTP/1.1" 200 -
+2025-11-25 11:59:16,309 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:59:16,408 - app.db - INFO - Database connection successful
+2025-11-25 11:59:16,421 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:16] "GET /api/invoices/event/1 HTTP/1.1" 200 -
+2025-11-25 11:59:16,487 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:16] "OPTIONS /api/events/1 HTTP/1.1" 200 -
+2025-11-25 11:59:16,490 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:59:16,589 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:16] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 11:59:16,593 - app.routes - INFO - JWT verified successfully
+2025-11-25 11:59:16,593 - app.db - INFO - Database connection successful
+2025-11-25 11:59:16,606 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 11:59:16,624 - app.models - INFO - Event dictionary keys: dict_keys(['events_id', 'userid', 'event_name', 'event_type', 'event_theme', 'event_color', 'schedule', 'start_time', 'end_time', 'status', 'package_id', 'onsite_firstname', 'onsite_lastname', 'onsite_contact', 'onsite_address', 'total_price', 'booking_type', 'viewed', 'event_type_name'])
+2025-11-25 11:59:16,626 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:59:16,698 - app.models - INFO - Final event_dict keys: dict_keys(['events_id', 'userid', 'event_name', 'event_type', 'event_theme', 'event_color', 'schedule', 'start_time', 'end_time', 'status', 'package_id', 'onsite_firstname', 'onsite_lastname', 'onsite_contact', 'onsite_address', 'total_price', 'booking_type', 'viewed', 'event_type_name', 'wishlist_id', 'suppliers', 'outfits', 'additional_services'])
+2025-11-25 11:59:16,750 - app.models - INFO - onsite_firstname: None
+2025-11-25 11:59:16,754 - app.db - INFO - Database connection successful
+2025-11-25 11:59:16,770 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:16] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 11:59:16,758 - app.models - INFO - onsite_lastname: None
+2025-11-25 11:59:16,777 - app.models - INFO - booking_type: Online
+2025-11-25 11:59:16,785 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:59:16,882 - app.db - INFO - Database connection successful
+2025-11-25 11:59:16,896 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:16] "GET /api/events/1 HTTP/1.1" 200 -
+2025-11-25 11:59:16,903 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:16] "OPTIONS /api/wishlist-venues/1 HTTP/1.1" 200 -
+2025-11-25 11:59:16,906 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:59:17,011 - app.db - INFO - Database connection successful
+2025-11-25 11:59:17,023 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:17] "GET /api/wishlist-venues/1 HTTP/1.1" 200 -
+2025-11-25 11:59:17,029 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:17] "OPTIONS /api/users/15 HTTP/1.1" 200 -
+2025-11-25 11:59:17,033 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:59:17,237 - app.db - INFO - Database connection successful
+2025-11-25 11:59:17,249 - app.models - INFO - Raw user data from database: {'userid': 15, 'firstname': 'Test', 'lastname': 'User', 'username': 'testuser', 'email': 'testuser@gmail.com', 'contactnumber': '0945432434254', 'address': 'Iligan', 'user_type': 'suppliers', 'user_img': None}
+2025-11-25 11:59:17,257 - app.models - INFO - Using default profile picture
+2025-11-25 11:59:17,265 - app.models - INFO - Final user data: {'userid': 15, 'firstname': 'Test', 'lastname': 'User', 'username': 'testuser', 'email': 'testuser@gmail.com', 'contactnumber': '0945432434254', 'address': 'Iligan', 'user_type': 'suppliers', 'user_img': 'saved/users_profile/dummy_profile.png'}
+2025-11-25 11:59:17,273 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:17] "GET /api/users/15 HTTP/1.1" 200 -
+2025-11-25 11:59:17,283 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:59:17,389 - app.db - INFO - Database connection successful
+2025-11-25 11:59:17,401 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:17] "GET /api/invoices/event/1 HTTP/1.1" 200 -
+2025-11-25 11:59:17,409 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:17] "OPTIONS /api/payments/invoice/1 HTTP/1.1" 200 -
+2025-11-25 11:59:17,413 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 11:59:17,517 - app.db - INFO - Database connection successful
+2025-11-25 11:59:17,567 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 11:59:17] "GET /api/payments/invoice/1 HTTP/1.1" 200 -
+2025-11-25 12:00:16,478 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:00:16] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:00:16,486 - app.routes - INFO - JWT verified successfully
+2025-11-25 12:00:16,508 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 12:00:16,515 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 12:00:16,625 - app.db - INFO - Database connection successful
+2025-11-25 12:00:16,635 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:00:16] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:01:16,472 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:01:16] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:01:16,477 - app.routes - INFO - JWT verified successfully
+2025-11-25 12:01:16,491 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 12:01:16,503 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 12:01:16,705 - app.db - INFO - Database connection successful
+2025-11-25 12:01:16,719 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:01:16] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:02:16,571 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:02:16] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:02:16,576 - app.routes - INFO - JWT verified successfully
+2025-11-25 12:02:16,590 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 12:02:16,598 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 12:02:16,689 - app.db - INFO - Database connection successful
+2025-11-25 12:02:16,699 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:02:16] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:03:16,480 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:03:16] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:03:16,485 - app.routes - INFO - JWT verified successfully
+2025-11-25 12:03:16,503 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 12:03:16,513 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 12:03:16,664 - app.db - INFO - Database connection successful
+2025-11-25 12:03:16,675 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:03:16] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:04:16,566 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:04:16] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:04:16,570 - app.routes - INFO - JWT verified successfully
+2025-11-25 12:04:16,600 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 12:04:16,608 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 12:04:16,802 - app.db - INFO - Database connection successful
+2025-11-25 12:04:16,861 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:04:16] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:06:13,562 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:06:13] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:06:13,571 - app.routes - INFO - JWT verified successfully
+2025-11-25 12:06:13,595 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 12:06:13,607 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 12:06:13,765 - app.db - INFO - Database connection successful
+2025-11-25 12:06:13,790 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:06:13] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:08:13,571 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:08:13] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:08:13,587 - app.routes - INFO - JWT verified successfully
+2025-11-25 12:08:13,611 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 12:08:13,626 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 12:08:13,744 - app.db - INFO - Database connection successful
+2025-11-25 12:08:13,755 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:08:13] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:09:16,556 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:09:16] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:09:16,563 - app.routes - INFO - JWT verified successfully
+2025-11-25 12:09:16,576 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 12:09:16,585 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 12:09:16,677 - app.db - INFO - Database connection successful
+2025-11-25 12:09:16,688 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:09:16] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:10:46,570 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:10:46] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:10:46,576 - app.routes - INFO - JWT verified successfully
+2025-11-25 12:10:46,589 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 12:10:46,596 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 12:10:46,784 - app.db - INFO - Database connection successful
+2025-11-25 12:10:46,799 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:10:46] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:11:47,559 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:11:47] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:11:47,568 - app.routes - INFO - JWT verified successfully
+2025-11-25 12:11:47,581 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 12:11:47,590 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 12:11:47,678 - app.db - INFO - Database connection successful
+2025-11-25 12:11:47,688 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:11:47] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:12:48,557 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:12:48] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:12:48,565 - app.routes - INFO - JWT verified successfully
+2025-11-25 12:12:48,580 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 12:12:48,588 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 12:12:48,677 - app.db - INFO - Database connection successful
+2025-11-25 12:12:48,688 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:12:48] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:13:49,565 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:13:49] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:13:49,568 - app.routes - INFO - JWT verified successfully
+2025-11-25 12:13:49,645 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 12:13:49,662 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 12:13:50,625 - app.db - INFO - Database connection successful
+2025-11-25 12:13:51,196 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:13:51] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:14:50,556 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:14:50] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:14:50,562 - app.routes - INFO - JWT verified successfully
+2025-11-25 12:14:50,605 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 12:14:50,644 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 12:14:50,836 - app.db - INFO - Database connection successful
+2025-11-25 12:14:50,937 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:14:50] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:15:51,555 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:15:51] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:15:51,561 - app.routes - INFO - JWT verified successfully
+2025-11-25 12:15:51,573 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 12:15:51,596 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 12:15:51,728 - app.db - INFO - Database connection successful
+2025-11-25 12:15:51,779 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:15:51] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:16:52,558 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:16:52] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:16:52,564 - app.routes - INFO - JWT verified successfully
+2025-11-25 12:16:52,581 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 12:16:52,592 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 12:16:52,688 - app.db - INFO - Database connection successful
+2025-11-25 12:16:52,702 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:16:52] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:17:53,568 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:17:53] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:17:53,578 - app.routes - INFO - JWT verified successfully
+2025-11-25 12:17:53,596 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 12:17:53,607 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 12:17:53,703 - app.db - INFO - Database connection successful
+2025-11-25 12:17:53,715 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:17:53] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:18:54,556 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:18:54] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:18:54,570 - app.routes - INFO - JWT verified successfully
+2025-11-25 12:18:54,583 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 12:18:54,594 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 12:18:54,685 - app.db - INFO - Database connection successful
+2025-11-25 12:18:54,697 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:18:54] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:19:55,556 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:19:55] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:19:55,562 - app.routes - INFO - JWT verified successfully
+2025-11-25 12:19:55,576 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 12:19:55,586 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 12:19:55,707 - app.db - INFO - Database connection successful
+2025-11-25 12:19:55,721 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:19:55] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:20:56,557 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:20:56] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:20:56,564 - app.routes - INFO - JWT verified successfully
+2025-11-25 12:20:56,580 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 12:20:56,591 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 12:20:56,682 - app.db - INFO - Database connection successful
+2025-11-25 12:20:56,696 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:20:56] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:21:57,571 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:21:57] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:21:57,577 - app.routes - INFO - JWT verified successfully
+2025-11-25 12:21:57,593 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 12:21:57,604 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 12:21:57,693 - app.db - INFO - Database connection successful
+2025-11-25 12:21:57,707 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:21:57] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:22:58,571 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:22:58] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:22:58,576 - app.routes - INFO - JWT verified successfully
+2025-11-25 12:22:58,591 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 12:22:58,601 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 12:22:58,689 - app.db - INFO - Database connection successful
+2025-11-25 12:22:58,701 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:22:58] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:23:59,558 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:23:59] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:23:59,565 - app.routes - INFO - JWT verified successfully
+2025-11-25 12:23:59,581 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 12:23:59,592 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 12:23:59,681 - app.db - INFO - Database connection successful
+2025-11-25 12:23:59,698 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:23:59] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:25:00,557 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:25:00] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:25:00,566 - app.routes - INFO - JWT verified successfully
+2025-11-25 12:25:00,578 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 12:25:00,586 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 12:25:00,675 - app.db - INFO - Database connection successful
+2025-11-25 12:25:00,687 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:25:00] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:26:01,556 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:26:01] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:26:01,562 - app.routes - INFO - JWT verified successfully
+2025-11-25 12:26:01,576 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 12:26:01,587 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 12:26:01,785 - app.db - INFO - Database connection successful
+2025-11-25 12:26:01,801 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:26:01] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:27:02,561 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:27:02] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:27:02,567 - app.routes - INFO - JWT verified successfully
+2025-11-25 12:27:02,578 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 12:27:02,587 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 12:27:02,787 - app.db - INFO - Database connection successful
+2025-11-25 12:27:02,802 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:27:02] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:28:03,557 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:28:03] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:28:03,563 - app.routes - INFO - JWT verified successfully
+2025-11-25 12:28:03,581 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 12:28:03,592 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 12:28:03,683 - app.db - INFO - Database connection successful
+2025-11-25 12:28:03,695 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:28:03] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:29:04,558 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:29:04] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:29:04,568 - app.routes - INFO - JWT verified successfully
+2025-11-25 12:29:04,580 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 12:29:04,590 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 12:29:04,680 - app.db - INFO - Database connection successful
+2025-11-25 12:29:04,691 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:29:04] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:30:05,556 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:30:05] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:30:05,563 - app.routes - INFO - JWT verified successfully
+2025-11-25 12:30:05,579 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 12:30:05,590 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 12:30:05,680 - app.db - INFO - Database connection successful
+2025-11-25 12:30:05,692 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:30:05] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:31:06,557 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:31:06] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:31:06,563 - app.routes - INFO - JWT verified successfully
+2025-11-25 12:31:06,577 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 12:31:06,587 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 12:31:06,798 - app.db - INFO - Database connection successful
+2025-11-25 12:31:06,815 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:31:06] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:32:07,570 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:32:07] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:32:07,575 - app.routes - INFO - JWT verified successfully
+2025-11-25 12:32:07,588 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 12:32:07,597 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 12:32:07,698 - app.db - INFO - Database connection successful
+2025-11-25 12:32:07,725 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:32:07] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:33:08,557 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:33:08] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:33:08,565 - app.routes - INFO - JWT verified successfully
+2025-11-25 12:33:08,580 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 12:33:08,590 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 12:33:08,694 - app.db - INFO - Database connection successful
+2025-11-25 12:33:08,708 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:33:08] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:34:09,558 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:34:09] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:34:09,566 - app.routes - INFO - JWT verified successfully
+2025-11-25 12:34:09,583 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 12:34:09,592 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 12:34:09,685 - app.db - INFO - Database connection successful
+2025-11-25 12:34:09,697 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:34:09] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:35:10,562 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:35:10] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:35:10,567 - app.routes - INFO - JWT verified successfully
+2025-11-25 12:35:10,582 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 12:35:10,592 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 12:35:10,788 - app.db - INFO - Database connection successful
+2025-11-25 12:35:10,801 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:35:10] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:36:11,569 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:36:11] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:36:11,575 - app.routes - INFO - JWT verified successfully
+2025-11-25 12:36:11,592 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 12:36:11,601 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 12:36:11,692 - app.db - INFO - Database connection successful
+2025-11-25 12:36:11,704 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:36:11] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:37:12,558 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:37:12] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:37:12,564 - app.routes - INFO - JWT verified successfully
+2025-11-25 12:37:12,577 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 12:37:12,586 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 12:37:12,676 - app.db - INFO - Database connection successful
+2025-11-25 12:37:12,689 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:37:12] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:38:13,561 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:38:13] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:38:13,567 - app.routes - INFO - JWT verified successfully
+2025-11-25 12:38:13,582 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 12:38:13,593 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 12:38:13,788 - app.db - INFO - Database connection successful
+2025-11-25 12:38:13,807 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:38:13] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:40:13,569 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:40:13] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:40:13,576 - app.routes - INFO - JWT verified successfully
+2025-11-25 12:40:13,595 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 12:40:13,608 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 12:40:13,704 - app.db - INFO - Database connection successful
+2025-11-25 12:40:13,717 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:40:13] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:42:13,573 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:42:13] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:42:13,577 - app.routes - INFO - JWT verified successfully
+2025-11-25 12:42:13,591 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 12:42:13,600 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 12:42:13,689 - app.db - INFO - Database connection successful
+2025-11-25 12:42:13,702 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:42:13] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:44:13,560 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:44:13] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:44:13,569 - app.routes - INFO - JWT verified successfully
+2025-11-25 12:44:13,584 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 12:44:13,594 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 12:44:13,684 - app.db - INFO - Database connection successful
+2025-11-25 12:44:13,697 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:44:13] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:46:13,566 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:46:13] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:46:13,571 - app.routes - INFO - JWT verified successfully
+2025-11-25 12:46:13,588 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 12:46:13,598 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 12:46:13,691 - app.db - INFO - Database connection successful
+2025-11-25 12:46:13,704 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:46:13] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:48:13,566 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:48:13] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:48:13,571 - app.routes - INFO - JWT verified successfully
+2025-11-25 12:48:13,584 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 12:48:13,596 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 12:48:13,688 - app.db - INFO - Database connection successful
+2025-11-25 12:48:13,702 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:48:13] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:50:13,565 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:50:13] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:50:13,572 - app.routes - INFO - JWT verified successfully
+2025-11-25 12:50:13,586 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 12:50:13,596 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 12:50:13,816 - app.db - INFO - Database connection successful
+2025-11-25 12:50:13,833 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:50:13] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:52:13,567 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:52:13] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:52:13,571 - app.routes - INFO - JWT verified successfully
+2025-11-25 12:52:13,647 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 12:52:13,671 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 12:52:13,879 - app.db - INFO - Database connection successful
+2025-11-25 12:52:13,892 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:52:13] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:54:13,559 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:54:13] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:54:13,565 - app.routes - INFO - JWT verified successfully
+2025-11-25 12:54:13,591 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 12:54:13,599 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 12:54:13,691 - app.db - INFO - Database connection successful
+2025-11-25 12:54:13,703 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:54:13] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:56:13,561 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:56:13] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:56:13,567 - app.routes - INFO - JWT verified successfully
+2025-11-25 12:56:13,583 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 12:56:13,592 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 12:56:13,683 - app.db - INFO - Database connection successful
+2025-11-25 12:56:13,695 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:56:13] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:58:13,575 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:58:13] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 12:58:13,580 - app.routes - INFO - JWT verified successfully
+2025-11-25 12:58:13,597 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 12:58:13,608 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 12:58:13,709 - app.db - INFO - Database connection successful
+2025-11-25 12:58:13,724 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 12:58:13] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:00:13,566 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:00:13] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:00:13,572 - app.routes - INFO - JWT verified successfully
+2025-11-25 13:00:13,585 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 13:00:13,597 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 13:00:13,689 - app.db - INFO - Database connection successful
+2025-11-25 13:00:13,704 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:00:13] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:02:13,567 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:02:13] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:02:13,573 - app.routes - INFO - JWT verified successfully
+2025-11-25 13:02:13,586 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 13:02:13,596 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 13:02:13,798 - app.db - INFO - Database connection successful
+2025-11-25 13:02:13,812 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:02:13] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:04:13,560 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:04:13] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:04:13,569 - app.routes - INFO - JWT verified successfully
+2025-11-25 13:04:13,583 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 13:04:13,593 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 13:04:13,682 - app.db - INFO - Database connection successful
+2025-11-25 13:04:13,696 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:04:13] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:06:13,560 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:06:13] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:06:13,569 - app.routes - INFO - JWT verified successfully
+2025-11-25 13:06:13,582 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 13:06:13,593 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 13:06:13,788 - app.db - INFO - Database connection successful
+2025-11-25 13:06:13,803 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:06:13] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:08:13,568 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:08:13] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:08:13,572 - app.routes - INFO - JWT verified successfully
+2025-11-25 13:08:13,588 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 13:08:13,600 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 13:08:13,694 - app.db - INFO - Database connection successful
+2025-11-25 13:08:13,709 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:08:13] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:10:13,559 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:10:13] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:10:13,568 - app.routes - INFO - JWT verified successfully
+2025-11-25 13:10:13,589 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 13:10:13,598 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 13:10:13,693 - app.db - INFO - Database connection successful
+2025-11-25 13:10:13,706 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:10:13] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:12:13,571 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:12:13] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:12:13,582 - app.routes - INFO - JWT verified successfully
+2025-11-25 13:12:13,595 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 13:12:13,605 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 13:12:13,802 - app.db - INFO - Database connection successful
+2025-11-25 13:12:13,819 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:12:13] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:14:13,576 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:14:13] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:14:13,579 - app.routes - INFO - JWT verified successfully
+2025-11-25 13:14:13,591 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 13:14:13,602 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 13:14:13,692 - app.db - INFO - Database connection successful
+2025-11-25 13:14:13,703 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:14:13] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:16:13,558 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:16:13] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:16:13,562 - app.routes - INFO - JWT verified successfully
+2025-11-25 13:16:13,577 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 13:16:13,588 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 13:16:13,678 - app.db - INFO - Database connection successful
+2025-11-25 13:16:13,691 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:16:13] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:18:13,556 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:18:13] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:18:13,562 - app.routes - INFO - JWT verified successfully
+2025-11-25 13:18:13,579 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 13:18:13,589 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 13:18:13,680 - app.db - INFO - Database connection successful
+2025-11-25 13:18:13,693 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:18:13] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:20:13,564 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:20:13] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:20:13,572 - app.routes - INFO - JWT verified successfully
+2025-11-25 13:20:13,586 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 13:20:13,596 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 13:20:13,685 - app.db - INFO - Database connection successful
+2025-11-25 13:20:13,697 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:20:13] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:22:13,570 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:22:13] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:22:13,576 - app.routes - INFO - JWT verified successfully
+2025-11-25 13:22:13,592 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 13:22:13,604 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 13:22:13,694 - app.db - INFO - Database connection successful
+2025-11-25 13:22:13,707 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:22:13] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:24:13,574 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:24:13] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:24:13,583 - app.routes - INFO - JWT verified successfully
+2025-11-25 13:24:13,599 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 13:24:13,609 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 13:24:13,700 - app.db - INFO - Database connection successful
+2025-11-25 13:24:13,712 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:24:13] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:26:13,559 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:26:13] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:26:13,568 - app.routes - INFO - JWT verified successfully
+2025-11-25 13:26:13,650 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 13:26:13,666 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 13:26:13,757 - app.db - INFO - Database connection successful
+2025-11-25 13:26:13,769 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:26:13] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:27:33,716 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:27:33] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:27:33,726 - app.routes - INFO - JWT verified successfully
+2025-11-25 13:27:34,044 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 13:27:34,140 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 13:27:35,077 - app.db - INFO - Database connection successful
+2025-11-25 13:27:35,098 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:27:35] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:28:16,555 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:28:16] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:28:16,559 - app.routes - INFO - JWT verified successfully
+2025-11-25 13:28:16,596 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 13:28:16,607 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 13:28:16,845 - app.db - INFO - Database connection successful
+2025-11-25 13:28:16,938 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:28:16] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:29:46,558 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:29:46] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:29:46,563 - app.routes - INFO - JWT verified successfully
+2025-11-25 13:29:46,575 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 13:29:46,590 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 13:29:46,814 - app.db - INFO - Database connection successful
+2025-11-25 13:29:46,829 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:29:46] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:30:47,577 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:30:47] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:30:47,610 - app.routes - INFO - JWT verified successfully
+2025-11-25 13:30:47,670 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 13:30:47,688 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 13:30:47,913 - app.db - INFO - Database connection successful
+2025-11-25 13:30:47,934 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:30:47] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:31:48,568 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:31:48] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:31:48,584 - app.routes - INFO - JWT verified successfully
+2025-11-25 13:31:48,629 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 13:31:48,660 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 13:31:49,151 - app.db - INFO - Database connection successful
+2025-11-25 13:31:49,778 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:31:49] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:32:25,707 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:32:25] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:32:25,742 - app.routes - INFO - JWT verified successfully
+2025-11-25 13:32:25,841 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 13:32:25,852 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 13:32:26,643 - app.db - INFO - Database connection successful
+2025-11-25 13:32:27,326 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:32:27] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:33:16,566 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:33:16] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:33:16,572 - app.routes - INFO - JWT verified successfully
+2025-11-25 13:33:16,589 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 13:33:16,599 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 13:33:16,917 - app.db - INFO - Database connection successful
+2025-11-25 13:33:16,931 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:33:16] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:34:16,690 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:34:16] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:34:16,695 - app.routes - INFO - JWT verified successfully
+2025-11-25 13:34:16,703 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 13:34:16,711 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 13:34:20,913 - app.db - INFO - Database connection successful
+2025-11-25 13:34:22,304 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:34:22] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:35:16,573 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:35:16] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:35:16,578 - app.routes - INFO - JWT verified successfully
+2025-11-25 13:35:16,596 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 13:35:16,612 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 13:35:17,353 - app.db - INFO - Database connection successful
+2025-11-25 13:35:17,377 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:35:17] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:36:37,489 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:36:37] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:36:37,649 - app.routes - INFO - JWT verified successfully
+2025-11-25 13:36:37,823 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 13:36:38,017 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 13:36:41,723 - app.db - INFO - Database connection successful
+2025-11-25 13:36:43,988 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:36:43] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:37:16,475 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:37:16] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:37:16,479 - app.routes - INFO - JWT verified successfully
+2025-11-25 13:37:16,497 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 13:37:16,508 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 13:37:17,169 - app.db - INFO - Database connection successful
+2025-11-25 13:37:17,185 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:37:17] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:38:16,516 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:38:16] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:38:16,553 - app.routes - INFO - JWT verified successfully
+2025-11-25 13:38:16,561 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 13:38:16,570 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 13:38:18,786 - app.db - INFO - Database connection successful
+2025-11-25 13:38:19,751 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:38:19] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:39:16,561 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:39:16] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:39:16,564 - app.routes - INFO - JWT verified successfully
+2025-11-25 13:39:16,582 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 13:39:16,659 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 13:39:17,829 - app.db - INFO - Database connection successful
+2025-11-25 13:39:18,918 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:39:18] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:40:46,684 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:40:46] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:40:46,794 - app.routes - INFO - JWT verified successfully
+2025-11-25 13:40:46,808 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 13:40:46,878 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 13:40:49,170 - app.db - INFO - Database connection successful
+2025-11-25 13:40:51,376 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:40:51] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:41:48,690 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:41:48] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:41:48,764 - app.routes - INFO - JWT verified successfully
+2025-11-25 13:41:49,029 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 13:41:49,185 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 13:41:51,341 - app.db - INFO - Database connection successful
+2025-11-25 13:41:52,232 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:41:52] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:42:22,908 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:42:22] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:42:23,222 - app.routes - INFO - JWT verified successfully
+2025-11-25 13:42:23,369 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 13:42:23,388 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 13:42:25,423 - app.db - INFO - Database connection successful
+2025-11-25 13:42:26,440 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:42:26] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:43:16,567 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:43:16] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:43:16,619 - app.routes - INFO - JWT verified successfully
+2025-11-25 13:43:16,678 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 13:43:16,692 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 13:43:16,954 - app.db - INFO - Database connection successful
+2025-11-25 13:43:16,968 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:43:16] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:45:13,565 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:45:13] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:45:13,600 - app.routes - INFO - JWT verified successfully
+2025-11-25 13:45:13,614 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 13:45:13,625 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 13:45:13,765 - app.db - INFO - Database connection successful
+2025-11-25 13:45:13,782 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:45:13] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:47:13,562 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:47:13] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:47:13,570 - app.routes - INFO - JWT verified successfully
+2025-11-25 13:47:13,655 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 13:47:13,664 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 13:47:13,781 - app.db - INFO - Database connection successful
+2025-11-25 13:47:13,798 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:47:13] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:49:13,573 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:49:13] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:49:13,577 - app.routes - INFO - JWT verified successfully
+2025-11-25 13:49:13,588 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 13:49:13,598 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 13:49:13,712 - app.db - INFO - Database connection successful
+2025-11-25 13:49:13,728 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:49:13] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:51:13,563 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:51:13] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:51:13,645 - app.routes - INFO - JWT verified successfully
+2025-11-25 13:51:13,656 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 13:51:13,666 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 13:51:13,875 - app.db - INFO - Database connection successful
+2025-11-25 13:51:13,890 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:51:13] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:53:13,563 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:53:13] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:53:13,569 - app.routes - INFO - JWT verified successfully
+2025-11-25 13:53:13,587 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 13:53:13,599 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 13:53:13,718 - app.db - INFO - Database connection successful
+2025-11-25 13:53:13,735 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:53:13] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:55:13,567 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:55:13] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:55:13,574 - app.routes - INFO - JWT verified successfully
+2025-11-25 13:55:13,592 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 13:55:13,604 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 13:55:13,850 - app.db - INFO - Database connection successful
+2025-11-25 13:55:13,884 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:55:13] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:57:13,555 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:57:13] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:57:13,560 - app.routes - INFO - JWT verified successfully
+2025-11-25 13:57:13,577 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 13:57:13,589 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 13:57:13,697 - app.db - INFO - Database connection successful
+2025-11-25 13:57:13,718 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:57:13] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:58:16,475 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:58:16] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:58:16,483 - app.routes - INFO - JWT verified successfully
+2025-11-25 13:58:16,495 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 13:58:16,506 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 13:58:16,603 - app.db - INFO - Database connection successful
+2025-11-25 13:58:16,618 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:58:16] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:59:16,563 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:59:16] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 13:59:16,568 - app.routes - INFO - JWT verified successfully
+2025-11-25 13:59:16,583 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 13:59:16,593 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 13:59:16,684 - app.db - INFO - Database connection successful
+2025-11-25 13:59:16,715 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 13:59:16] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 14:00:16,557 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 14:00:16] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 14:00:16,562 - app.routes - INFO - JWT verified successfully
+2025-11-25 14:00:16,593 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 14:00:16,606 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 14:00:16,729 - app.db - INFO - Database connection successful
+2025-11-25 14:00:16,757 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 14:00:16] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 14:01:16,480 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 14:01:16] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 14:01:16,599 - app.routes - INFO - JWT verified successfully
+2025-11-25 14:01:16,614 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 14:01:16,624 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 14:01:16,729 - app.db - INFO - Database connection successful
+2025-11-25 14:01:16,744 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 14:01:16] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 14:02:16,559 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 14:02:16] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 14:02:16,564 - app.routes - INFO - JWT verified successfully
+2025-11-25 14:02:16,581 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 14:02:16,594 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 14:02:16,723 - app.db - INFO - Database connection successful
+2025-11-25 14:02:16,743 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 14:02:16] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 14:03:16,469 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 14:03:16] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 14:03:16,475 - app.routes - INFO - JWT verified successfully
+2025-11-25 14:03:16,509 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 14:03:16,519 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 14:03:16,649 - app.db - INFO - Database connection successful
+2025-11-25 14:03:16,664 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 14:03:16] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 14:04:16,560 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 14:04:16] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 14:04:16,566 - app.routes - INFO - JWT verified successfully
+2025-11-25 14:04:16,587 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 14:04:16,598 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 14:04:16,696 - app.db - INFO - Database connection successful
+2025-11-25 14:04:16,710 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 14:04:16] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 14:06:13,564 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 14:06:13] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 14:06:13,578 - app.routes - INFO - JWT verified successfully
+2025-11-25 14:06:13,628 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 14:06:13,639 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 14:06:13,754 - app.db - INFO - Database connection successful
+2025-11-25 14:06:13,772 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 14:06:13] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 14:08:13,557 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 14:08:13] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 14:08:13,564 - app.routes - INFO - JWT verified successfully
+2025-11-25 14:08:13,579 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 14:08:13,602 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 14:08:13,711 - app.db - INFO - Database connection successful
+2025-11-25 14:08:13,746 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 14:08:13] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 14:10:13,567 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 14:10:13] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 14:10:13,571 - app.routes - INFO - JWT verified successfully
+2025-11-25 14:10:13,583 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 14:10:13,594 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 14:10:13,738 - app.db - INFO - Database connection successful
+2025-11-25 14:10:13,752 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 14:10:13] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 14:12:13,569 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 14:12:13] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 14:12:13,600 - app.routes - INFO - JWT verified successfully
+2025-11-25 14:12:13,614 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 14:12:13,627 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 14:12:13,731 - app.db - INFO - Database connection successful
+2025-11-25 14:12:13,746 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 14:12:13] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 14:14:13,561 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 14:14:13] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 14:14:13,589 - app.routes - INFO - JWT verified successfully
+2025-11-25 14:14:13,599 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 14:14:13,611 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 14:14:13,820 - app.db - INFO - Database connection successful
+2025-11-25 14:14:13,836 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 14:14:13] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 14:16:13,570 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 14:16:13] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 14:16:13,578 - app.routes - INFO - JWT verified successfully
+2025-11-25 14:16:13,589 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 14:16:13,599 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 14:16:13,732 - app.db - INFO - Database connection successful
+2025-11-25 14:16:13,745 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 14:16:13] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 14:17:16,476 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 14:17:16] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 14:17:16,490 - app.routes - INFO - JWT verified successfully
+2025-11-25 14:17:16,501 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 14:17:16,510 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 14:17:16,612 - app.db - INFO - Database connection successful
+2025-11-25 14:17:16,624 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 14:17:16] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 14:18:16,585 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 14:18:16] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 14:18:16,588 - app.routes - INFO - JWT verified successfully
+2025-11-25 14:18:16,598 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 14:18:16,607 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 14:18:16,704 - app.db - INFO - Database connection successful
+2025-11-25 14:18:16,718 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 14:18:16] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 14:19:16,560 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 14:19:16] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 14:19:16,592 - app.routes - INFO - JWT verified successfully
+2025-11-25 14:19:16,625 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 14:19:16,634 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 14:19:16,748 - app.db - INFO - Database connection successful
+2025-11-25 14:19:16,762 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 14:19:16] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 14:20:16,563 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 14:20:16] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 14:20:16,568 - app.routes - INFO - JWT verified successfully
+2025-11-25 14:20:16,582 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 14:20:16,594 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 14:20:16,899 - app.db - INFO - Database connection successful
+2025-11-25 14:20:16,964 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 14:20:16] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 14:21:16,468 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 14:21:16] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 14:21:16,476 - app.routes - INFO - JWT verified successfully
+2025-11-25 14:21:16,490 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 14:21:16,500 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 14:21:16,667 - app.db - INFO - Database connection successful
+2025-11-25 14:21:16,680 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 14:21:16] "GET /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 14:22:16,545 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 14:22:16] "OPTIONS /api/events/wishlist/count HTTP/1.1" 200 -
+2025-11-25 14:22:16,626 - app.routes - INFO - JWT verified successfully
+2025-11-25 14:22:16,686 - app.routes - INFO - Current user: admin@example.com
+2025-11-25 14:22:16,812 - app.db - INFO - Connecting to database at localhost...
+2025-11-25 14:22:17,525 - app.db - INFO - Database connection successful
+2025-11-25 14:22:18,623 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 14:22:18] "GET /api/events/wishlist/count HTTP/1.1" 200 -
