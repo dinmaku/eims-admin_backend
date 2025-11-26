@@ -514,36 +514,22 @@ def init_routes(app):
 
 
 #manage events routes
-    @app.route('/booked-wishlist', methods=['GET', 'OPTIONS'])
+    @app.route('/booked-wishlist', methods=['GET'])
     @jwt_required()
     def get_booked_wishlist_route():
-        if request.method == 'OPTIONS':
-            response = jsonify({'message': 'OK'})
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
-            response.headers.add('Access-Control-Allow-Methods', 'GET,OPTIONS')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response, 200
-
         try:
             # Get all booked wishlists
             booked_wishlists = get_all_booked_wishlist()
             logger.info(f"Booked wishlists data: {booked_wishlists}")
             
-            response = jsonify(booked_wishlists)
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response, 200
+            return jsonify(booked_wishlists), 200
 
         except Exception as e:
             logger.error(f"Error getting booked wishlist: {str(e)}")
-            response = jsonify({
+            return jsonify({
                 'success': False,
                 'message': str(e)
-            })
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response, 500
+            }), 500
 
     @app.route('/booked-wishlist/<int:events_id>', methods=['PUT'])
     @jwt_required()  # Authentication required
@@ -757,31 +743,19 @@ def init_routes(app):
             logger.error(f"Error updating venue price: {e}")
             return jsonify({"message": "An error occurred while updating venue price"}), 500
 
-    @app.route('/events', methods=['POST', 'OPTIONS'])
+    @app.route('/events', methods=['POST'])
     @jwt_required()
     def create_event():
-        if request.method == 'OPTIONS':
-            # Handle preflight request
-            response = jsonify({'message': 'OK'})
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
-            response.headers.add('Access-Control-Allow-Methods', 'POST,OPTIONS')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response, 200
-            
         try:
             # Get user ID from JWT token
             email = get_jwt_identity()
             userid = get_user_id_by_email(email)
             
             if not userid:
-                response = jsonify({
+                return jsonify({
                     'success': False,
                     'message': 'Invalid user token'
-                })
-                response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-                response.headers.add('Access-Control-Allow-Credentials', 'true')
-                return response, 401
+                }), 401
 
             data = request.get_json()
             
@@ -817,32 +791,23 @@ def init_routes(app):
             events_id = add_event_item(**event_data, **package_config)
 
             if events_id:
-                response = jsonify({
+                return jsonify({
                     'success': True,
                     'message': 'Event created successfully',
                     'events_id': events_id
-                })
-                response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-                response.headers.add('Access-Control-Allow-Credentials', 'true')
-                return response, 201
+                }), 201
             else:
-                response = jsonify({
+                return jsonify({
                     'success': False,
                     'message': 'Failed to create event'
-                })
-                response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-                response.headers.add('Access-Control-Allow-Credentials', 'true')
-                return response, 500
+                }), 500
 
         except Exception as e:
             logger.error(f"Error creating event: {str(e)}")
-            response = jsonify({
+            return jsonify({
                 'success': False,
                 'message': f'Error creating event: {str(e)}'
-            })
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response, 500
+            }), 500
 
 #routes for outfit packages
 
@@ -1386,31 +1351,17 @@ def init_routes(app):
             logger.error(f"Error adding social media: {str(e)}")
             return jsonify({'error': 'Failed to add social media'}), 500
 
-    @app.route('/api/supplier/<int:supplier_id>/social-media', methods=['GET', 'OPTIONS'])
-    @jwt_required()  # Add JWT protection
+    @app.route('/api/supplier/<int:supplier_id>/social-media', methods=['GET'])
+    @jwt_required()  # JWT protection
     def get_supplier_social_media_route(supplier_id):
-        if request.method == 'OPTIONS':
-            response = jsonify({'message': 'OK'})
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
-            response.headers.add('Access-Control-Allow-Methods', 'GET,OPTIONS')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response, 200
-
         try:
             logger.info(f"Fetching social media for supplier_id: {supplier_id}")
             social_media = get_supplier_social_media(supplier_id)
             logger.info(f"Found social media: {social_media}")
-            response = jsonify(social_media)
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response
+            return jsonify(social_media), 200
         except Exception as e:
             logger.error(f"Error fetching social media: {str(e)}")
-            response = jsonify({'error': str(e)})
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response, 500
+            return jsonify({'error': str(e)}), 500
 
     @app.route('/inactive-packages', methods=['GET'])
     @jwt_required()
@@ -1588,31 +1539,19 @@ def init_routes(app):
         except Exception as e:
             return jsonify({'error': str(e)}), 500
 
-    @app.route('/wishlist-packages', methods=['POST', 'OPTIONS'])
+    @app.route('/wishlist-packages', methods=['POST'])
     @jwt_required()
     def create_wishlist_package_route():
-        if request.method == 'OPTIONS':
-            # Handle preflight request
-            response = jsonify({'message': 'OK'})
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
-            response.headers.add('Access-Control-Allow-Methods', 'POST,OPTIONS')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response, 200
-            
         try:
-            # Get user ID from token
+            # Get user ID from JWT token
             email = get_jwt_identity()
             userid = get_user_id_by_email(email)
             
             if userid is None:
-                response = jsonify({
+                return jsonify({
                     'success': False,
                     'message': 'User not found'
-                })
-                response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-                response.headers.add('Access-Control-Allow-Credentials', 'true')
-                return response, 404
+                }), 404
 
             data = request.get_json()
 
@@ -1623,58 +1562,38 @@ def init_routes(app):
             )
 
             if wishlist_id:
-                response = jsonify({
+                return jsonify({
                     'success': True,
                     'message': 'Wishlist package created successfully',
                     'wishlist_id': wishlist_id
-                })
-                response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-                response.headers.add('Access-Control-Allow-Credentials', 'true')
-                return response, 201
+                }), 201
             else:
-                response = jsonify({
+                return jsonify({
                     'success': False,
                     'message': 'Failed to create wishlist package'
-                })
-                response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-                response.headers.add('Access-Control-Allow-Credentials', 'true')
-                return response, 500
+                }), 500
 
         except Exception as e:
             logger.error(f"Error creating wishlist package: {str(e)}")
-            response = jsonify({
+            return jsonify({
                 'success': False,
                 'message': f'Error creating wishlist package: {str(e)}'
-            })
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response, 500
+            }), 500
 
-    @app.route('/wishlist-packages/<int:wishlist_id>', methods=['PUT', 'OPTIONS'])
+
+    @app.route('/wishlist-packages/<int:wishlist_id>', methods=['PUT'])
     @jwt_required()
     def update_wishlist_package_route(wishlist_id):
-        if request.method == 'OPTIONS':
-            # Handle preflight request
-            response = jsonify({'message': 'OK'})
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
-            response.headers.add('Access-Control-Allow-Methods', 'PUT,OPTIONS')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response, 200
-            
         try:
-            # Get user ID from token
+            # Get user ID from JWT token
             email = get_jwt_identity()
             userid = get_user_id_by_email(email)
             
             if userid is None:
-                response = jsonify({
+                return jsonify({
                     'success': False,
                     'message': 'User not found'
-                })
-                response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-                response.headers.add('Access-Control-Allow-Credentials', 'true')
-                return response, 404
+                }), 404
 
             data = request.get_json()
             
@@ -1689,33 +1608,24 @@ def init_routes(app):
             result = update_wishlist_package(wishlist_id, data)
             
             if result:
-                response = jsonify({
+                return jsonify({
                     'success': True,
                     'message': 'Wishlist package updated successfully',
                     'wishlist_id': wishlist_id,
-                    'venue_status': venue_status  # Include this in the response
-                })
-                response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-                response.headers.add('Access-Control-Allow-Credentials', 'true')
-                return response, 200
+                    'venue_status': venue_status
+                }), 200
             else:
-                response = jsonify({
+                return jsonify({
                     'success': False,
                     'message': 'Failed to update wishlist package'
-                })
-                response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-                response.headers.add('Access-Control-Allow-Credentials', 'true')
-                return response, 500
-                
+                }), 500
+                    
         except Exception as e:
-            logging.error(f"Error updating wishlist package: {str(e)}")
-            response = jsonify({
+            logger.error(f"Error updating wishlist package: {str(e)}")
+            return jsonify({
                 'success': False,
                 'message': f'Error updating wishlist package: {str(e)}'
-            })
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response, 500
+            }), 500
 
     @app.route('/events/schedules', methods=['GET'])
     def get_event_schedules():
@@ -1749,19 +1659,11 @@ def init_routes(app):
             app.logger.error(f"Error fetching event schedules: {str(e)}")
             return jsonify({'error': str(e)}), 500
 
-    @app.route('/additional-services', methods=['GET', 'OPTIONS'])
+    @app.route('/additional-services', methods=['GET'])
     @jwt_required()
     def get_additional_services():
         conn = None
         cursor = None
-        
-        if request.method == 'OPTIONS':
-            response = jsonify({'message': 'OK'})
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
-            response.headers.add('Access-Control-Allow-Methods', 'GET,OPTIONS')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response, 200
 
         try:
             conn = get_db_connection()
@@ -1787,20 +1689,14 @@ def init_routes(app):
                 'status': row[4]
             } for row in cursor.fetchall()]
             
-            response = jsonify(services)
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response, 200
+            return jsonify(services), 200
             
         except Exception as e:
             logger.error(f"Error getting additional services: {str(e)}")
-            response = jsonify({
+            return jsonify({
                 'success': False,
                 'message': str(e)
-            })
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response, 500
+            }), 500
         finally:
             if cursor:
                 cursor.close()
@@ -1827,17 +1723,9 @@ def init_routes(app):
         except Exception as e:
             return jsonify({'message': str(e)}), 500
 
-    @app.route('/api/wishlist-outfits/<int:wishlist_outfit_id>', methods=['PUT', 'OPTIONS'])
+    @app.route('/api/wishlist-outfits/<int:wishlist_outfit_id>', methods=['PUT'])
     @jwt_required()
     def update_wishlist_outfit_status_route(wishlist_outfit_id):
-        if request.method == 'OPTIONS':
-            response = jsonify({'message': 'OK'})
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
-            response.headers.add('Access-Control-Allow-Methods', 'PUT,OPTIONS')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response, 200
-
         try:
             data = request.get_json()
             status = data.get('status')
@@ -1848,21 +1736,12 @@ def init_routes(app):
             success, message = update_wishlist_outfit_status(wishlist_outfit_id, status)
             
             if success:
-                response = jsonify({'message': message})
-                response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-                response.headers.add('Access-Control-Allow-Credentials', 'true')
-                return response, 200
+                return jsonify({'message': message}), 200
             else:
-                response = jsonify({'message': message})
-                response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-                response.headers.add('Access-Control-Allow-Credentials', 'true')
-                return response, 400
+                return jsonify({'message': message}), 400
                 
         except Exception as e:
-            response = jsonify({'message': str(e)})
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response, 500
+            return jsonify({'message': str(e)}), 500
 
     @app.route('/api/wishlist-additional-services/<int:id>', methods=['PUT'])
     @jwt_required()
@@ -1884,17 +1763,9 @@ def init_routes(app):
         except Exception as e:
             return jsonify({'message': str(e)}), 500
 
-    @app.route('/api/wishlist-additional-services/update-status', methods=['PUT', 'OPTIONS'])
+    @app.route('/api/wishlist-additional-services/update-status', methods=['PUT'])
     @jwt_required()
     def update_wishlist_additional_service_status_by_ids_route():
-        if request.method == 'OPTIONS':
-            response = jsonify({'message': 'OK'})
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
-            response.headers.add('Access-Control-Allow-Methods', 'PUT,OPTIONS')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response, 200
-
         try:
             data = request.get_json()
             wishlist_id = data.get('wishlist_id')
@@ -1912,10 +1783,7 @@ def init_routes(app):
                     (status, wishlist_id, add_service_id)
                 )
                 conn.commit()
-                response = jsonify({'message': 'Status updated successfully'})
-                response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-                response.headers.add('Access-Control-Allow-Credentials', 'true')
-                return response, 200
+                return jsonify({'message': 'Status updated successfully'}), 200
             except Exception as e:
                 logger.error(f"Error updating wishlist additional service status: {e}")
                 conn.rollback()
@@ -1982,121 +1850,65 @@ def init_routes(app):
                 'message': str(e)
             }), 500
 
-    @app.route('/api/wishlist-outfits-direct/<int:wishlist_outfit_id>', methods=['DELETE', 'OPTIONS'])
+    @app.route('/api/wishlist-outfits-direct/<int:wishlist_outfit_id>', methods=['DELETE'])
     @jwt_required()
     def delete_wishlist_outfit_direct_route(wishlist_outfit_id):
-        if request.method == 'OPTIONS':
-            response = jsonify({'message': 'OK'})
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
-            response.headers.add('Access-Control-Allow-Methods', 'DELETE,OPTIONS')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response, 200
-
         try:
             success = delete_wishlist_outfit_direct(wishlist_outfit_id)
-            
             if success:
-                response = jsonify({'message': 'Outfit deleted successfully'})
-                response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-                response.headers.add('Access-Control-Allow-Credentials', 'true')
-                return response, 200
+                return jsonify({'message': 'Outfit deleted successfully'}), 200
             else:
                 return jsonify({'message': 'Failed to delete outfit'}), 500
-                
         except Exception as e:
             logger.error(f"Error deleting wishlist outfit: {e}")
             return jsonify({'message': 'An error occurred while deleting outfit'}), 500
 
-    @app.route('/api/wishlist-services-direct/<int:service_id>', methods=['DELETE', 'OPTIONS'])
+
+    @app.route('/api/wishlist-services-direct/<int:service_id>', methods=['DELETE'])
     @jwt_required()
     def delete_wishlist_service_direct_route(service_id):
-        if request.method == 'OPTIONS':
-            response = jsonify({'message': 'OK'})
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
-            response.headers.add('Access-Control-Allow-Methods', 'DELETE,OPTIONS')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response, 200
-
         try:
             success = delete_wishlist_service_direct(service_id)
-            
             if success:
-                response = jsonify({'message': 'Service deleted successfully'})
-                response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-                response.headers.add('Access-Control-Allow-Credentials', 'true')
-                return response, 200
+                return jsonify({'message': 'Service deleted successfully'}), 200
             else:
                 return jsonify({'message': 'Failed to delete service'}), 500
-                
         except Exception as e:
             logger.error(f"Error deleting wishlist service: {e}")
             return jsonify({'message': 'An error occurred while deleting service'}), 500
 
-    @app.route('/api/wishlist-suppliers-direct/<int:wishlist_supplier_id>', methods=['DELETE', 'OPTIONS'])
+
+    @app.route('/api/wishlist-suppliers-direct/<int:wishlist_supplier_id>', methods=['DELETE'])
     @jwt_required()
     def delete_wishlist_supplier_direct_route(wishlist_supplier_id):
-        if request.method == 'OPTIONS':
-            response = jsonify({'message': 'OK'})
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
-            response.headers.add('Access-Control-Allow-Methods', 'DELETE,OPTIONS')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response, 200
-
         try:
             success = delete_wishlist_supplier_direct(wishlist_supplier_id)
-            
             if success:
-                response = jsonify({'message': 'Supplier deleted successfully'})
-                response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-                response.headers.add('Access-Control-Allow-Credentials', 'true')
-                return response, 200
+                return jsonify({'message': 'Supplier deleted successfully'}), 200
             else:
                 return jsonify({'message': 'Failed to delete supplier'}), 500
-                
         except Exception as e:
             logger.error(f"Error deleting wishlist supplier: {e}")
             return jsonify({'message': 'An error occurred while deleting supplier'}), 500
 
-    @app.route('/api/wishlist-venues-direct/<int:wishlist_venue_id>', methods=['DELETE', 'OPTIONS'])
+
+    @app.route('/api/wishlist-venues-direct/<int:wishlist_venue_id>', methods=['DELETE'])
     @jwt_required()
     def delete_wishlist_venue_direct_route(wishlist_venue_id):
-        if request.method == 'OPTIONS':
-            response = jsonify({'message': 'OK'})
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
-            response.headers.add('Access-Control-Allow-Methods', 'DELETE,OPTIONS')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response, 200
-
         try:
             success = delete_wishlist_venue_direct(wishlist_venue_id)
-            
             if success:
-                response = jsonify({'message': 'Venue deleted successfully'})
-                response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-                response.headers.add('Access-Control-Allow-Credentials', 'true')
-                return response, 200
+                return jsonify({'message': 'Venue deleted successfully'}), 200
             else:
                 return jsonify({'message': 'Failed to delete venue'}), 500
-                
         except Exception as e:
             logger.error(f"Error deleting wishlist venue: {e}")
             return jsonify({'message': 'An error occurred while deleting venue'}), 500
 
-    @app.route('/api/wishlist-packages/<int:wishlist_id>/venue-status', methods=['PUT', 'OPTIONS'])
+
+    @app.route('/api/wishlist-packages/<int:wishlist_id>/venue-status', methods=['PUT'])
     @jwt_required()
     def update_wishlist_venue_status_route(wishlist_id):
-        if request.method == 'OPTIONS':
-            response = jsonify({'message': 'OK'})
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
-            response.headers.add('Access-Control-Allow-Methods', 'PUT,OPTIONS')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response, 200
-
         try:
             data = request.get_json()
             venue_status = data.get('venue_status')
@@ -2112,10 +1924,7 @@ def init_routes(app):
                     (venue_status, wishlist_id)
                 )
                 conn.commit()
-                response = jsonify({'message': 'Venue status updated successfully', 'success': True})
-                response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-                response.headers.add('Access-Control-Allow-Credentials', 'true')
-                return response, 200
+                return jsonify({'message': 'Venue status updated successfully', 'success': True}), 200
             except Exception as e:
                 logger.error(f"Error updating wishlist venue status: {e}")
                 conn.rollback()
@@ -2123,10 +1932,10 @@ def init_routes(app):
             finally:
                 cursor.close()
                 conn.close()
-                
         except Exception as e:
             logger.error(f"Error in update_wishlist_venue_status_route: {e}")
             return jsonify({'message': 'An error occurred while updating venue status', 'success': False}), 500
+
 
     @app.route('/api/upcoming-events', methods=['GET'])
     @jwt_required()
@@ -2213,39 +2022,23 @@ def init_routes(app):
             logger.error(f"Error retrieving invoice: {e}")
             return jsonify({"error": str(e)}), 500
     
-    @app.route('/api/invoices/event/<int:event_id>', methods=['GET', 'OPTIONS'])
-    @jwt_required(optional=True)  # Make JWT optional to handle OPTIONS requests
+    @app.route('/api/invoices/event/<int:event_id>', methods=['GET'])
+    @jwt_required(optional=True)  # JWT optional for this route
     def get_invoice_by_event_route(event_id):
-        if request.method == 'OPTIONS':
-            response = jsonify({'message': 'OK'})
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
-            response.headers.add('Access-Control-Allow-Methods', 'GET,OPTIONS')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response, 200
-            
         try:
-            # Only verify JWT for actual data requests
-            verify_jwt_in_request()
-            
+            # Only verify JWT if token is present
+            verify_jwt_in_request(optional=True)
+
             invoice = get_invoice_by_event(event_id)
-            
+
             if not invoice:
-                response = jsonify({"error": "No invoice found for this event"})
-                response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-                response.headers.add('Access-Control-Allow-Credentials', 'true')
-                return response, 404
-            
-            response = jsonify(invoice)
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response, 200
+                return jsonify({"error": "No invoice found for this event"}), 404
+
+            return jsonify(invoice), 200
+
         except Exception as e:
             logger.error(f"Error retrieving invoice for event: {e}")
-            response = jsonify({"error": str(e)})
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response, 500
+            return jsonify({"error": str(e)}), 500
     
     @app.route('/api/invoices/<int:invoice_id>', methods=['PUT'])
     @jwt_required()
@@ -2324,39 +2117,23 @@ def init_routes(app):
             return jsonify({"error": str(e)}), 500
 
     # Route without the /api prefix for compatibility with frontend
-    @app.route('/invoices/event/<int:event_id>', methods=['GET', 'OPTIONS'])
-    @jwt_required(optional=True)
-    def get_invoice_by_event_route_compat(event_id):
-        if request.method == 'OPTIONS':
-            response = jsonify({'message': 'OK'})
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
-            response.headers.add('Access-Control-Allow-Methods', 'GET,OPTIONS')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response, 200
-            
+    @app.route('/invoices/event/<int:event_id>', methods=['GET'])
+    @jwt_required(optional=True)  # JWT optional for this route
+    def get_invoice_by_event_route(event_id):
         try:
-            # Verify JWT for actual data requests
-            verify_jwt_in_request()
-            
+            # Only verify JWT if present
+            verify_jwt_in_request(optional=True)
+
             invoice = get_invoice_by_event(event_id)
-            
+
             if not invoice:
-                response = jsonify({"error": "No invoice found for this event"})
-                response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-                response.headers.add('Access-Control-Allow-Credentials', 'true')
-                return response, 404
-            
-            response = jsonify(invoice)
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response, 200
+                return jsonify({"error": "No invoice found for this event"}), 404
+
+            return jsonify(invoice), 200
+
         except Exception as e:
             logger.error(f"Error retrieving invoice for event: {e}")
-            response = jsonify({"error": str(e)})
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response, 500
+            return jsonify({"error": str(e)}), 500
 
     # Function to initialize invoice and payment tables
     @app.route('/api/initialize-invoice-tables', methods=['POST'])
@@ -2491,164 +2268,98 @@ def init_routes(app):
                 conn.close()
                 logger.info("Database connection closed")
 
-    @app.route('/api/events/<int:event_id>', methods=['GET', 'OPTIONS'])
-    @jwt_required(optional=True)  # Make JWT optional to handle OPTIONS requests
+    @app.route('/api/events/<int:event_id>', methods=['GET'])
+    @jwt_required(optional=True)
     def api_get_event_route(event_id):
-        # Handle OPTIONS requests for CORS preflight
-        if request.method == 'OPTIONS':
-            response = jsonify({'message': 'OK'})
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
-            response.headers.add('Access-Control-Allow-Methods', 'GET,OPTIONS')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response, 200
-            
-        # This route handles GET requests for event details with CORS support
         try:
-            # Only verify JWT for actual data requests
-            verify_jwt_in_request()
-            
+            verify_jwt_in_request(optional=True)
             event_details = get_event_details(event_id)
-            
+
             if not event_details:
                 return jsonify({'message': 'Event not found'}), 404
-            
-            # Get any wishlist package for this event
+
+            # Include wishlist package if available
             if 'wishlist_id' in event_details:
                 wishlist_details = get_wishlist_package(event_details['wishlist_id'])
                 if wishlist_details:
                     event_details['wishlist_package'] = wishlist_details
-            
-            # Format time and decimal values for JSON serialization
-            if 'start_time' in event_details and event_details['start_time'] is not None:
-                event_details['start_time'] = event_details['start_time'].strftime('%H:%M:%S')
-                
-            if 'end_time' in event_details and event_details['end_time'] is not None:
-                event_details['end_time'] = event_details['end_time'].strftime('%H:%M:%S')
-                
+
+            # Format times and prices
+            for key in ['start_time', 'end_time']:
+                if key in event_details and event_details[key] is not None:
+                    event_details[key] = event_details[key].strftime('%H:%M:%S')
             if 'total_price' in event_details and event_details['total_price'] is not None:
                 event_details['total_price'] = float(event_details['total_price'])
-            
-            # Make sure all pricing data is properly formatted for the frontend
-            if 'suppliers' in event_details and event_details['suppliers']:
-                for supplier in event_details['suppliers']:
-                    if 'price' in supplier and supplier['price'] is not None:
-                        supplier['price'] = float(supplier['price'])
-                        
-            if 'outfits' in event_details and event_details['outfits']:
-                for outfit in event_details['outfits']:
-                    if 'price' in outfit and outfit['price'] is not None:
-                        outfit['price'] = float(outfit['price'])
-                        
+
+            for collection in ['suppliers', 'outfits']:
+                if collection in event_details and event_details[collection]:
+                    for item in event_details[collection]:
+                        if 'price' in item and item['price'] is not None:
+                            item['price'] = float(item['price'])
+
             if 'venue' in event_details and event_details['venue']:
                 if 'venue_price' in event_details['venue'] and event_details['venue']['venue_price'] is not None:
                     event_details['venue']['venue_price'] = float(event_details['venue']['venue_price'])
-            
-            response = jsonify(event_details)
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response, 200
+
+            return jsonify(event_details), 200
+
         except Exception as e:
             logger.error(f"Error in api_get_event_route: {str(e)}")
-            response = jsonify({'message': f'An error occurred while fetching event details: {str(e)}'})
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response, 500
+            return jsonify({'message': f'An error occurred while fetching event details: {str(e)}'}), 500
 
-    @app.route('/api/invoices/event/<int:event_id>', methods=['GET', 'OPTIONS'])
-    @jwt_required(optional=True)  # Make JWT optional to handle OPTIONS requests
+
+    @app.route('/api/invoices/event/<int:event_id>', methods=['GET'])
+    @jwt_required(optional=True)
     def get_invoice_by_event_route_api(event_id):
-        if request.method == 'OPTIONS':
-            response = jsonify({'message': 'OK'})
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
-            response.headers.add('Access-Control-Allow-Methods', 'GET,OPTIONS')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response, 200
-            
         try:
-            # Verify JWT for actual data requests
-            verify_jwt_in_request()
-            
+            verify_jwt_in_request(optional=True)
             invoice = get_invoice_by_event(event_id)
-            
-            if not invoice:
-                response = jsonify({"error": "No invoice found for this event"})
-                response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-                response.headers.add('Access-Control-Allow-Credentials', 'true')
-                return response, 404
-            
-            response = jsonify(invoice)
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response, 200
-        except Exception as e:
-            logger.error(f"Error retrieving invoice for event: {e}")
-            response = jsonify({"error": str(e)})
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response, 500
-    
-    # Add a route without the /api prefix for compatibility with frontend
-    @app.route('/invoices/event/<int:event_id>', methods=['GET', 'OPTIONS'])
-    @jwt_required(optional=True)  # Make JWT optional to handle OPTIONS requests
-    def get_invoice_by_event_route_compat_v2(event_id):
-        if request.method == 'OPTIONS':
-            response = jsonify({'message': 'OK'})
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
-            response.headers.add('Access-Control-Allow-Methods', 'GET,OPTIONS')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response, 200
-            
-        try:
-            # Verify JWT for actual data requests
-            verify_jwt_in_request()
-            
-            invoice = get_invoice_by_event(event_id)
-            
-            if not invoice:
-                response = jsonify({"error": "No invoice found for this event"})
-                response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-                response.headers.add('Access-Control-Allow-Credentials', 'true')
-                return response, 404
-            
-            response = jsonify(invoice)
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response, 200
-        except Exception as e:
-            logger.error(f"Error retrieving invoice for event: {e}")
-            response = jsonify({"error": str(e)})
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response, 500
 
-    @app.route('/api/users/<int:userid>', methods=['GET', 'OPTIONS'])
-    @app.route('/api/users/info/<int:userid>', methods=['GET', 'OPTIONS'])
-    @app.route('/api/user-details/<int:userid>', methods=['GET', 'OPTIONS'])
-    @jwt_required(optional=True)  # Make JWT optional to handle OPTIONS requests
-    def get_user_info_route(userid):
-        if request.method == 'OPTIONS':
-            response = jsonify({'message': 'OK'})
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
-            response.headers.add('Access-Control-Allow-Methods', 'GET,OPTIONS')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response, 200
-            
+            if not invoice:
+                return jsonify({"error": "No invoice found for this event"}), 404
+
+            return jsonify(invoice), 200
+
+        except Exception as e:
+            logger.error(f"Error retrieving invoice for event: {e}")
+            return jsonify({"error": str(e)}), 500
+
+
+    # Compatibility route without /api prefix
+    @app.route('/invoices/event/<int:event_id>', methods=['GET'])
+    @jwt_required(optional=True)
+    def get_invoice_by_event_route_compat_v2(event_id):
         try:
-            # Use the existing get_user_profile_by_id function from models
+            verify_jwt_in_request(optional=True)
+            invoice = get_invoice_by_event(event_id)
+
+            if not invoice:
+                return jsonify({"error": "No invoice found for this event"}), 404
+
+            return jsonify(invoice), 200
+
+        except Exception as e:
+            logger.error(f"Error retrieving invoice for event: {e}")
+            return jsonify({"error": str(e)}), 500
+
+
+    @app.route('/api/users/<int:userid>', methods=['GET'])
+    @app.route('/api/users/info/<int:userid>', methods=['GET'])
+    @app.route('/api/user-details/<int:userid>', methods=['GET'])
+    @jwt_required(optional=True)
+    def get_user_info_route(userid):
+        try:
             user_data = get_user_profile_by_id(userid)
-            
+
             if not user_data:
                 return jsonify({"message": "User not found"}), 404
-            
+
             return jsonify(user_data), 200
-            
+
         except Exception as e:
             logger.error(f"Error fetching user by id: {e}")
             return jsonify({"message": f"Error: {str(e)}"}), 500
+
 
     # Discount routes
     @app.route('/api/discounts', methods=['GET'])
@@ -2887,39 +2598,28 @@ def init_routes(app):
             print(f"Error updating venue status: {str(e)}")
             return jsonify({'success': False, 'error': str(e)}), 500
 
-    @app.route('/api/wishlist-venues', methods=['POST', 'OPTIONS'])
+    @app.route('/api/wishlist-venues', methods=['POST'])
     @jwt_required()
     def create_wishlist_venue_route():
-        if request.method == 'OPTIONS':
-            response = jsonify({'message': 'OK'})
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
-            response.headers.add('Access-Control-Allow-Methods', 'POST,OPTIONS')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response, 200
-
         try:
             data = request.get_json()
             if not data:
                 return jsonify({'message': 'No data provided'}), 400
 
-            # Get user ID from token
             email = get_jwt_identity()
             userid = get_user_id_by_email(email)
-            
+
             if userid is None:
                 return jsonify({'message': 'User not found'}), 404
 
-            # Create the wishlist venue
             conn = get_db_connection()
             cursor = conn.cursor()
             try:
                 cursor.execute("""
                     INSERT INTO wishlist_venues (
                         wishlist_id, venue_id, price, remarks, status
-                    ) VALUES (
-                        %s, %s, %s, %s, %s
-                    ) RETURNING wishlist_venue_id
+                    ) VALUES (%s, %s, %s, %s, %s)
+                    RETURNING wishlist_venue_id
                 """, (
                     data.get('wishlist_id'),
                     data.get('venue_id'),
@@ -2927,19 +2627,13 @@ def init_routes(app):
                     data.get('remarks', ''),
                     data.get('status', 'Pending')
                 ))
-                
                 wishlist_venue_id = cursor.fetchone()[0]
                 conn.commit()
-                
-                response = jsonify({
+                return jsonify({
                     'success': True,
                     'message': 'Venue added successfully',
                     'wishlist_venue_id': wishlist_venue_id
-                })
-                response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-                response.headers.add('Access-Control-Allow-Credentials', 'true')
-                return response, 201
-                
+                }), 201
             except Exception as e:
                 conn.rollback()
                 logger.error(f"Error creating wishlist venue: {e}")
@@ -2947,48 +2641,31 @@ def init_routes(app):
             finally:
                 cursor.close()
                 conn.close()
-                
+
         except Exception as e:
             logger.error(f"Error in create_wishlist_venue_route: {e}")
             return jsonify({'message': 'An error occurred while creating wishlist venue'}), 500
 
-    @app.route('/api/wishlist-packages/<int:wishlist_id>/venue', methods=['DELETE', 'OPTIONS'])
+
+    @app.route('/api/wishlist-packages/<int:wishlist_id>/venue', methods=['DELETE'])
     @jwt_required()
     def remove_wishlist_package_venue_route(wishlist_id):
-        if request.method == 'OPTIONS':
-            response = jsonify({'message': 'OK'})
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
-            response.headers.add('Access-Control-Allow-Methods', 'DELETE,OPTIONS')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response, 200
-
         try:
             conn = get_db_connection()
             cursor = conn.cursor()
-            
-            # Update the wishlist_package to remove venue reference
             cursor.execute("""
                 UPDATE wishlist_packages 
                 SET venue_id = NULL, venue_status = NULL
                 WHERE wishlist_id = %s
                 RETURNING wishlist_id
             """, (wishlist_id,))
-            
             result = cursor.fetchone()
             conn.commit()
-            
+
             if result:
-                response = jsonify({
-                    'success': True,
-                    'message': 'Venue reference removed successfully'
-                })
-                response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-                response.headers.add('Access-Control-Allow-Credentials', 'true')
-                return response, 200
-            else:
-                return jsonify({'message': 'Wishlist package not found'}), 404
-                
+                return jsonify({'success': True, 'message': 'Venue reference removed successfully'}), 200
+            return jsonify({'message': 'Wishlist package not found'}), 404
+
         except Exception as e:
             logger.error(f"Error removing venue reference: {e}")
             if conn:
@@ -3000,59 +2677,32 @@ def init_routes(app):
             if conn:
                 conn.close()
 
-    @app.route('/api/wishlist-packages/<int:wishlist_id>', methods=['GET', 'OPTIONS'])
+
+    @app.route('/api/wishlist-packages/<int:wishlist_id>', methods=['GET'])
     @jwt_required()
     def get_wishlist_package_route(wishlist_id):
-        if request.method == 'OPTIONS':
-            response = jsonify({'message': 'OK'})
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
-            response.headers.add('Access-Control-Allow-Methods', 'GET,OPTIONS')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response, 200
-
         try:
-            # Get wishlist package details
             wishlist_data = get_wishlist_package(wishlist_id)
-            
             if not wishlist_data:
                 return jsonify({'message': 'Wishlist package not found'}), 404
-            
-            response = jsonify(wishlist_data)
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response, 200
-            
+            return jsonify(wishlist_data), 200
+
         except Exception as e:
             logger.error(f"Error getting wishlist package: {e}")
             return jsonify({'message': 'An error occurred while getting wishlist package'}), 500
 
-    @app.route('/api/wishlist-venues/<int:wishlist_id>', methods=['GET', 'OPTIONS'])
-    @jwt_required(optional=True)  # Make JWT optional to handle OPTIONS requests
-    def get_wishlist_venues_route(wishlist_id):
-        if request.method == 'OPTIONS':
-            response = jsonify({'message': 'OK'})
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
-            response.headers.add('Access-Control-Allow-Methods', 'GET,OPTIONS')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response, 200
 
+    @app.route('/api/wishlist-venues/<int:wishlist_id>', methods=['GET'])
+    @jwt_required(optional=True)
+    def get_wishlist_venues_route(wishlist_id):
         try:
-            # Get wishlist venues
             venues = get_wishlist_venues(wishlist_id)
-            
-            response = jsonify(venues)
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response, 200
-            
+            return jsonify(venues), 200
+
         except Exception as e:
             logger.error(f"Error getting wishlist venues: {e}")
-            response = jsonify({'message': 'An error occurred while getting wishlist venues'})
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response, 500
+            return jsonify({'message': 'An error occurred while getting wishlist venues'}), 500
+
 
     @app.route('/api/venue-image/<path:filename>')
     def serve_venue_image(filename):
@@ -3076,29 +2726,24 @@ def init_routes(app):
                 'message': 'Image not found'
             }), 404
 
-    @app.route('/package/<int:package_id>', methods=['PUT', 'OPTIONS'])
-    @cross_origin(supports_credentials=True, origins=['http://localhost:5173'])
+    @app.route('/package/<int:package_id>', methods=['PUT'])
     @jwt_required()
     def update_package_route(package_id):
-        if request.method == 'OPTIONS':
-            response = make_response()
-            response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-            response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
-            response.headers.add('Access-Control-Allow-Methods', 'PUT')
-            response.headers.add('Access-Control-Allow-Credentials', 'true')
-            return response
-
         try:
             data = request.get_json()
+            if not data:
+                return jsonify({'error': 'No data provided'}), 400
+
             success, message = update_package(package_id, data)
-            
+
             if success:
                 return jsonify({'message': message}), 200
             else:
                 return jsonify({'error': message}), 404
 
         except Exception as e:
-            return jsonify({'error': str(e)}), 500
+            logger.error(f"Error updating package {package_id}: {str(e)}")
+            return jsonify({'error': f"An error occurred: {str(e)}"}), 500
 
     @app.route('/packages/inactive', methods=['GET', 'OPTIONS'])
     @jwt_required()
@@ -3611,9 +3256,8 @@ def init_routes(app):
             if conn:
                 conn.close()
 
-    @app.route('/api/events/<int:events_id>/feedback', methods=['GET', 'OPTIONS'])
-    @cross_origin(supports_credentials=True, origins=['http://localhost:5173'])
-    @jwt_required(optional=True)  # Make JWT optional to handle OPTIONS requests
+    @app.route('/api/events/<int:events_id>/feedback', methods=['GET'])
+    @jwt_required(optional=True)  # JWT is optional
     def get_event_feedback_route(events_id):
         try:
             feedback = get_event_feedback(events_id)
@@ -3630,9 +3274,9 @@ def init_routes(app):
             print(f"Error in get_event_feedback_route: {e}")
             return jsonify({'message': 'Error fetching feedback'}), 500
 
+
     @app.route('/api/feedback/statistics', methods=['GET'])
-    @cross_origin(supports_credentials=True, origins=['http://localhost:5173'])
-    @jwt_required(optional=True)
+    @jwt_required(optional=True)  # JWT is optional
     def get_feedback_statistics_route():
         try:
             statistics = get_feedback_statistics()
