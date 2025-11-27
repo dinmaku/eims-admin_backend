@@ -5292,7 +5292,7 @@ def get_user_by_username(username):
         conn.close()
 
 def get_event_feedback(events_id):
-    """Get feedback for a specific event."""
+    """Get all feedbacks for a specific event."""
     try:
         conn = db.get_db_connection()
         cur = conn.cursor(cursor_factory=RealDictCursor)
@@ -5304,15 +5304,15 @@ def get_event_feedback(events_id):
             WHERE f.events_id = %s
         """, (events_id,))
         
-        feedback = cur.fetchone()
+        feedback = cur.fetchall()  # <-- changed from fetchone() to fetchall()
         
         cur.close()
         conn.close()
         
-        return feedback
+        return feedback  # returns an empty list if no rows
     except Exception as e:
         print(f"Error getting event feedback: {e}")
-        return None
+        return []
 
 def get_calendar_events():
     """Get all events with their details for calendar display"""

@@ -3241,19 +3241,11 @@ def init_routes(app):
                 conn.close()
 
     @app.route('/api/events/<int:events_id>/feedback', methods=['GET'])
-    @jwt_required(optional=True)  # JWT is optional
+    @jwt_required(optional=True)
     def get_event_feedback_route(events_id):
         try:
             feedback = get_event_feedback(events_id)
-            if feedback:
-                return jsonify({
-                    'feedback_id': feedback['feedback_id'],
-                    'rating': feedback['rating'],
-                    'feedback_text': feedback['feedback_text'],
-                    'created_at': feedback['created_at'].isoformat() if feedback['created_at'] else None,
-                    'user': f"{feedback['firstname']} {feedback['lastname']}"
-                }), 200
-            return jsonify({'message': 'No feedback found for this event'}), 404
+            return jsonify({'data': feedback}), 200  # always return 200 with a list
         except Exception as e:
             print(f"Error in get_event_feedback_route: {e}")
             return jsonify({'message': 'Error fetching feedback'}), 500
