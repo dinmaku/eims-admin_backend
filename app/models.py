@@ -5292,24 +5292,24 @@ def get_user_by_username(username):
         conn.close()
 
 def get_event_feedback(events_id):
-    """Get all feedbacks for a specific event."""
+    """Get feedback for a specific event using pg8000."""
     try:
         conn = db.get_db_connection()
-        cur = conn.cursor(cursor_factory=RealDictCursor)
-        
+        cur = conn.cursor(named_tuple=False, dictionary=True)  # <-- dictionary=True gives dict-like rows
+
         cur.execute("""
             SELECT f.*, u.firstname, u.lastname
             FROM event_feedbacks f
             JOIN users u ON f.userid = u.userid
             WHERE f.events_id = %s
         """, (events_id,))
-        
-        feedback = cur.fetchall()  # <-- changed from fetchone() to fetchall()
-        
+
+        feedback = cur.fetchall()  # returns a list of dicts
+
         cur.close()
         conn.close()
-        
-        return feedback  # returns an empty list if no rows
+
+        return feedback  # will be empty list if no feedback
     except Exception as e:
         print(f"Error getting event feedback: {e}")
         return []
