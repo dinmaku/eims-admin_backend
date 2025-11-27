@@ -5295,24 +5295,31 @@ def get_event_feedback(events_id):
     """Get feedback for a specific event using pg8000."""
     try:
         conn = db.get_db_connection()
-        cur = conn.cursor(named_tuple=False, dictionary=True)  # <-- dictionary=True gives dict-like rows
+        cur = conn.cursor()
 
         cur.execute("""
-            SELECT f.*, u.firstname, u.lastname
+            SELECT f.feedback_id, f.userid, f.events_id, f.rating, f.feedback_text, f.created_at,
+                   u.firstname, u.lastname
             FROM event_feedbacks f
             JOIN users u ON f.userid = u.userid
             WHERE f.events_id = %s
         """, (events_id,))
 
-        feedback = cur.fetchall()  # returns a list of dicts
-
+        row = cur.fetchone()
         cur.close()
         conn.close()
 
-        return feedback  # will be empty list if no feedback
+        if not row:
+            return None
+
+        # Map tuple to dictionary manually
+        keys = ['feedback_id', 'userid', 'events_id', 'rating', 'feedback_text', 'created_at', 'firstname', 'lastname']
+        feedback = dict(zip(keys, row))
+        return feedback
+
     except Exception as e:
         print(f"Error getting event feedback: {e}")
-        return []
+        return None
 
 def get_calendar_events():
     """Get all events with their details for calendar display"""
